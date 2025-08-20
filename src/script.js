@@ -20,7 +20,6 @@ orderbutton.addEventListener("click", () => {
 })
 
 document.addEventListener("click", (e) => {
-  // Check if click is NOT inside sidebar or hamburger
   if (!mobnav.contains(e.target) && !hamburger.contains(e.target)) {
     mobnav.classList.add("-translate-x-full"); // Close sidebar
   }
