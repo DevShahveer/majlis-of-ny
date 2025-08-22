@@ -1,76 +1,91 @@
-Majlis of NY – Section Layout Blueprint
-1. Header / Navbar
-Element	Details
-Background	#1C1C1C (Charcoal)
-Height	80px (desktop), 60px (mobile)
-Logo	Left-aligned, gold accent (#D4AF37)
-Menu Items	Right-aligned, font: Roboto, 16px, color: #E0E0E0
-CTA Button	Gold (#D4AF37) with hover effect: scale 1.05 + shadow
-Sticky Navbar	Optional, shadow on scroll
-Animation	Fade-in or slide-down on load
-2. Hero Section
-Element	Details
-Background	Full-width image or subtle video overlayed with #1C1C1C @ 40% opacity
-Heading (H1)	Playfair Display, 48px (desktop), 32px (mobile), gold #D4AF37
-Subheading (H2)	Roboto, 20px, #E0E0E0
-CTA Buttons	Gold, hover: shadow + slight scale, padding: 15px 40px
-Spacing	Padding top: 120px, bottom: 80px
-Animation	Fade-up on scroll for text and buttons
-3. About Section
-Element	Details
-Background	Cream / Off-white (#F5F5F5)
-Layout	Two-column grid: left = text, right = image
-Heading (H2)	Playfair Display, 36px, #1C1C1C
-Paragraph	Roboto, 18px, #1C1C1C, line-height: 1.6
-Image Styling	Rounded corners, subtle shadow, max-width: 100%
-Spacing	Padding: 80px top & bottom, 40px side margin
-Animation	Fade-left (text), fade-right (image)
-4. Services / Offerings
-Element	Details
-Background	#F5F5F5
-Layout	3–4 cards per row (grid), responsive
-Card Background	White or #E0E0E0 with soft shadow
-Card Border	Optional gold thin border (#D4AF37)
-Heading (Card)	Playfair Display, 24px, #1C1C1C
-Body (Card)	Roboto, 16px, #1C1C1C
-Hover Effect	Slight scale up (1.03) + gold shadow
-Spacing	Gap: 30px, Padding: 40px each card
-Animation	Fade-up on scroll
-5. Gallery / Media Section
-Element	Details
-Background	#1C1C1C (dark)
-Layout	Masonry/grid, 2–3 images per row on desktop
-Images	WebP format, lazy-loaded
-Border / Accent	Thin gold border on hover (#D4AF37)
-Spacing	20px gap between images
-Videos	Embed from YouTube/Vimeo only
-Animation	Zoom-in on hover, fade-in on scroll
-6. Testimonials / Community
-Element	Details
-Background	#1C1C1C
-Carousel Cards	Dark gray #2C2C2C, rounded corners
-Text	#E0E0E0, Roboto, 16px
-Quotes	Gold #D4AF37, Playfair Display, 24px
-Avatar / Image	Circular, small border gold
-Animation	Slide carousel left/right
-7. Contact / Booking Section
-Element	Details
-Background	#F5F5F5
-Layout	Centered form, responsive
-Input Fields	Minimal, border: #E0E0E0, focus: gold border (#D4AF37)
-Labels	Roboto, 16px, #1C1C1C
-Button	Gold (#D4AF37), hover: shadow + scale 1.05
-Padding	80px top & bottom, 20px side
-Animation	Fade-up for form elements
-8. Footer
-Element	Details
-Background	#1C1C1C
-Text Color	#E0E0E0
-Links / Social	Gold hover (#D4AF37)
-Layout	3-column grid: left = logo/info, middle = quick links, right = social icons
-Padding	60px top & bottom, 20px side
-Animation	Fade-in on scroll
-9. Spacing & Layout Rules
+Header / Navbar
+| Element | Details |
+|---------|--------|
+| Background | #000000 (Black) |
+| Height | 80px (desktop), 60px (mobile) |
+| Logo | Left-aligned, Gold #D4AF37 |
+| Menu Items | Right-aligned, font: Roboto, 16px, White #FFFFFF |
+| CTA Button | Gold #D4AF37 with hover effect: scale 1.05 + shadow |
+| Sticky Navbar | Optional, shadow on scroll |
+| Animation | Fade-in or slide-down on load |
+
+Hero Section
+| Element | Details |
+|---------|--------|
+| Background | Full-width image/video overlayed with Black #000000 @ 40% opacity |
+| Heading (H1) | Playfair Display, 48px (desktop), 32px (mobile), Gold #D4AF37 |
+| Subheading (H2) | Roboto, 20px, White #FFFFFF |
+| CTA Buttons | Gold #D4AF37, hover: shadow + slight scale, padding: 15px 40px |
+| Spacing | Padding top: 120px, bottom: 80px |
+| Animation | Fade-up on scroll for text and buttons |
+
+About Section
+| Element | Details |
+|---------|--------|
+| Background | White #FFFFFF |
+| Layout | Two-column grid: left = text, right = image |
+| Heading (H2) | Playfair Display, 36px, Black #000000 |
+| Paragraph | Roboto, 18px, Black #000000, line-height: 1.6 |
+| Image Styling | Rounded corners, subtle shadow, max-width: 100% |
+| Spacing | Padding: 80px top & bottom, 40px side margin |
+| Animation | Fade-left (text), fade-right (image) |
+
+Services / Offerings
+| Element | Details |
+|---------|--------|
+| Background | White #FFFFFF |
+| Layout | 3–4 cards per row (grid), responsive |
+| Card Background | White #FFFFFF or Light Gray #E5E5E5 with soft shadow |
+| Card Border | Optional Gold thin border #D4AF37 |
+| Heading (Card) | Playfair Display, 24px, Black #000000 |
+| Body (Card) | Roboto, 16px, Black #000000 |
+| Hover Effect | Slight scale up (1.03) + Gold shadow |
+| Spacing | Gap: 30px, Padding: 40px each card |
+| Animation | Fade-up on scroll |
+
+Gallery / Media Section
+| Element | Details |
+|---------|--------|
+| Background | Black #000000 |
+| Layout | Masonry/grid, 2–3 images per row on desktop |
+| Images | WebP format, lazy-loaded |
+| Border / Accent | Thin Gold border on hover #D4AF37 |
+| Spacing | 20px gap between images |
+| Videos | Embed from YouTube/Vimeo only |
+| Animation | Zoom-in on hover, fade-in on scroll |
+
+Testimonials / Community
+| Element | Details |
+|---------|--------|
+| Background | Black #000000 |
+| Carousel Cards | Dark Gray #1A1A1A, rounded corners |
+| Text | White #FFFFFF, Roboto, 16px |
+| Quotes | Gold #D4AF37, Playfair Display, 24px |
+| Avatar / Image | Circular, small Gold border |
+| Animation | Slide carousel left/right |
+
+Contact / Booking Section
+| Element | Details |
+|---------|--------|
+| Background | White #FFFFFF |
+| Layout | Centered form, responsive |
+| Input Fields | Minimal, border: Light Gray #E5E5E5, focus: Gold border #D4AF37 |
+| Labels | Roboto, 16px, Black #000000 |
+| Button | Gold #D4AF37, hover: shadow + scale 1.05 |
+| Padding | 80px top & bottom, 20px side |
+| Animation | Fade-up for form elements |
+
+Footer
+| Element | Details |
+|---------|--------|
+| Background | Black #000000 |
+| Text Color | White #FFFFFF |
+| Links / Social | Gold hover #D4AF37 |
+| Layout | 3-column grid: left = logo/info, middle = quick links, right = social icons |
+| Padding | 60px top & bottom, 20px side |
+| Animation | Fade-in on scroll |
+
+Spacing & Layout Rules
 
 Section spacing: 80px top/bottom (hero slightly more)
 
@@ -86,7 +101,7 @@ Tablet: 768px–1199px
 
 Mobile: ≤767px
 
-10. Animations / Microinteractions
+Animations / Microinteractions
 
 Fade-in on scroll for headings & sections
 
