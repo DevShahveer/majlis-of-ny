@@ -10,7 +10,7 @@
     <!-- PC Navbar -->
     <section
       id="navigation-bar"
-      class="flex justify-between items-center p-8 sticky top-0 z-50 shadow-md bg-[#000000]/90 backdrop-blur-sm xl1440:p-8 xl2560:p-16 xl:p-9"
+      class="flex justify-between items-center p-8 sticky top-0 z-50 shadow-md bg-[#000000]/90 backdrop-blur-sm xl1440:p-8 xl2560:p-16 xl:p-9 whitespace-nowrap"
     >
       <div id="logo">
         <img
@@ -42,7 +42,7 @@
       </div>
 
       <!-- Desktop nav links -->
-      <ul class="hidden md:flex items-center gap-8 font-medium">
+      <ul class="hidden md:flex items-center gap-8 font-medium md:gap-5 lg:gap-8">
         <li class="relative group">
           <a
             href="#"
@@ -65,11 +65,11 @@
             </svg>
           </a>
           <ul
-            class="absolute left-0 top-full mt-2 opacity-0 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-40 flex flex-col bg-[#3a3a3a] rounded shadow-md min-w-[150px] transition-all duration-300 ease-in-out space-y-1.5 text-base xl:text-xl"
+          class="absolute left-0 top-full mt-2 opacity-0 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-40 flex flex-col bg-[#3a3a3a] rounded shadow-md min-w-[150px] transition-all duration-300 ease-in-out space-y-1.5 text-base xl:text-xl"
           >
             <li>
               <a
-                href="#"
+              href="#"
                 class="px-4 py-2 text-[#ffffff] hover:text-[#D4AF37] lg:text-xl xl1440:text-2xl xl2560:text-5xl"
                 >UberEats</a
               >
@@ -83,13 +83,20 @@
             </li>
             <li>
               <a
-                href="#"
+              href="#"
                 class="px-4 py-2 text-[#ffffff] hover:text-[#D4AF37] lg:text-xl xl1440:text-2xl xl2560:text-5xl"
                 >Grubnhub</a
-              >
-            </li>
-          </ul>
-        </li>
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-[#ffffff] hover:text-[#D4AF37] font-roboto text-base lg:text-xl xl1440:text-2xl xl2560:text-5xl"
+              >About Us</a
+            >
+          </li>
         <li>
           <a
             href="#"
@@ -171,10 +178,14 @@
         </li>
         <li>
           <a href="#" class="text-[#E0E0E0] hover:text-[#D4AF37] font-roboto"
+            >About Us</a
+          >
+        </li>
+          <a href="#" class="text-[#E0E0E0] hover:text-[#D4AF37] font-roboto"
             >Hookah Bar</a
           >
         </li>
-        <li>
+          <li>
           <a href="#" class="text-[#E0E0E0] hover:text-[#D4AF37] font-roboto"
             >Menu</a
           >
@@ -235,103 +246,20 @@
     </section>
 
 
-<!-- About / Intro Section -->
-<section id="about" class="flex flex-col xs320:flex-col xs375:flex-col xs425:flex-col md:flex-row items-center justify-between min-h-[100vh] md:h-screen bg-[#0D1317] p-4 xs320:p-3 xs375:p-4 xs425:p-6 md:p-16 gap-6 md:gap-12">
-
-  <!-- Left Column: Text -->
-  <div id="about-txt" class="md:w-1/2 flex flex-col gap-4 xs320:gap-3 xs375:gap-4 xs425:gap-5 md:gap-6">
-    <h1 class="text-[#D4AF37] text-xl xs320:text-lg xs375:text-xl xs425:text-xl md:text-2xl lg:text-3xl xl:text-3xl xl1440:text-4xl xl2560:text-5xl font-semibold">
-      Step Into Majlis New York!
-    </h1>
-    <h2 class="text-[#FFE8D0] text-2xl xs320:text-xl xs375:text-xl xs425:text-xl md:text-3xl lg:text-4xl xl:text-4xl xl1440:text-5xl xl2560:text-6xl font-bold leading-snug">
-      Majlis of New York: A Premier Hookah Bar & <br> Restaurant
-    </h2>
-    <p class="text-[#FFE8D0] text-base xs320:text-sm xs375:text-sm xs425:text-sm md:text-lg lg:text-xl xl:text-xl xl1440:text-2xl xl2560:text-3xl leading-relaxed">
-      Majlis of New York stands as a top-tier destination, offering a unique combination 
-      of premium halal hookah and cross-cultural Southern European cooking. With an 
-      atmosphere of refined grace, Majlis is the place where comfort meets elegance, 
-      creating the ideal location for memorable meetups.
-    </p>
-    <button class="mt-3 xs320:mt-2 xs375:mt-2 xs425:mt-2 md:mt-4 bg-[#D4AF37] text-[#0D1317] font-semibold py-2 xs320:py-1 xs375:py-2 xs425:py-2 md:py-3 px-4 xs320:px-3 xs375:px-4 xs425:px-4 md:px-6 rounded-md hover:scale-105 hover:shadow-lg transition transform max-w-xs w-full sm:w-auto">
-      Read More
-    </button>
+<!-- Intro Section -->
+ <section id="intro" class="flex flex-col lg:flex lg:flex-row h-auto md:p-4 bg-[#0d1317] md:pb-10 overflow-x-hidden lg:gap-12 lg:p-8 items-center">
+    <div id="intro-txt" class="flex flex-col md:mt-10 gap-8">
+    <h2 class="text-[#ffe8d0] font-semibold md:text-xl font-sans uppercase">Step Into Majlis New York!</h2>
+    <h1 class="text-[#ffe8d0] font-normal md:text-5xl font-serif">Majlis of New York: A Premier Hookah Bar & Restaurant:</h1>
+    <p  class="text-[#ffe8d0] font-sans md:text-base lg:text-xl">Majlis of New York stands as a top-tier destination, offering a unique combination of premium halal hookah and Cross-cultural Southern European cooking. With an atmosphere of refined grace, Majlis is the place where comfort meets elegance, creating the Ideal location for memorable meetups.</p>
+    <div id="intro-button" class="flex lg:mt-8">
+      <button class="text-[#ffe8d0] md:text-base lg:text-xl border border-[#D4AF37] bg-[#D4AF37] md:px-5 md:py-2 md:rounded hover:scale-105 hover:bg-[#0d1317] hover:text-white transition duration-500 ">Read More</button>
+    </div>
   </div>
-
-  <!-- Right Column: Image -->
-  <div id="about-photo" class="md:w-1/2 flex justify-center md:mt-0">
-    <img src="images/imgabout.webp" alt="Majlis of NY" class="w-full h-auto xs320:w-full xs375:w-full xs425:w-full md:w-full rounded-lg object-cover shadow-xl">
+  <div id="intro-pic" class="flex flex-col md:mt-10 ">
+    <img src="images/imgabout.webp" class=" md:max-w-full lg:max-w-[500px]" alt="">
   </div>
-
-</section>
-<!-- Features / Highlights Section -->
-<section id="features" class="bg-[#0D1317] py-16 px-4 xs320:px-4 xs375:px-6 xs425:px-8 md:px-16 lg:px-20 xl:px-24 xl1440:px-32 xl2560:px-64">
-  <div class="mx-auto flex flex-col md:flex-row flex-wrap justify-between gap-6 xs320:gap-4 xs375:gap-5 xs425:gap-6 md:gap-8 lg:gap-10 xl:gap-12 xl1440:gap-16 xl2560:gap-20 max-w-full xl2560:max-w-[2400px]">
-
-    <!-- Feature 1 -->
-    <div class="flex flex-col items-center text-center md:text-left md:items-start bg-[#1a1a1a] p-4 xs320:p-3 xs375:p-4 xs425:p-5 md:p-6 lg:p-8 xl:p-10 xl1440:p-12 xl2560:p-16 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-transform flex-1 min-w-[250px] xl2560:min-w-[350px]">
-      <div class="w-20 xs320:w-16 xs375:w-18 md:w-24 lg:w-28 xl:w-32 xl1440:w-36 xl2560:w-40 h-20 xs320:h-16 xs375:h-18 md:h-24 lg:h-28 xl:h-32 xl1440:h-36 xl2560:h-40 mb-4">
-        <img src="images/Copy-of-Untitled-Design-1-300x300.webp" alt="Halal Icon" class="w-full h-full object-contain">
-      </div>
-      <h3 class="text-[#D4AF37] text-lg xs320:text-sm xs375:text-base md:text-xl lg:text-2xl xl:text-3xl xl1440:text-4xl xl2560:text-5xl font-semibold mb-2">100% Halal Mastery</h3>
-      <p class="text-[#FFE8D0] text-sm xs320:text-xs xs375:text-sm md:text-base lg:text-lg xl:text-xl xl1440:text-2xl xl2560:text-3xl leading-relaxed">
-        All of our dishes are 100% halal, ensuring that you can enjoy authentic and flavorful meals, made with the highest standards of quality and integrity.
-      </p>
-    </div>
-
-    <!-- Feature 2 -->
-    <div class="flex flex-col items-center text-center md:text-left md:items-start bg-[#1a1a1a] p-4 xs320:p-3 xs375:p-4 xs425:p-5 md:p-6 lg:p-8 xl:p-10 xl1440:p-12 xl2560:p-16 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-transform flex-1 min-w-[250px] xl2560:min-w-[350px]">
-      <div class="w-20 xs320:w-16 xs375:w-18 md:w-24 lg:w-28 xl:w-32 xl1440:w-36 xl2560:w-40 h-20 xs320:h-16 xs375:h-18 md:h-24 lg:h-28 xl:h-32 xl1440:h-36 xl2560:h-40 mb-4">
-        <img src="images/icon.webp" alt="Mediterranean Icon" class="w-full h-full object-contain">
-      </div>
-      <h3 class="text-[#D4AF37] text-lg xs320:text-sm xs375:text-base md:text-xl lg:text-2xl xl:text-3xl xl1440:text-4xl xl2560:text-5xl font-semibold mb-2">A Taste of the Mediterranean</h3>
-      <p class="text-[#FFE8D0] text-sm xs320:text-xs xs375:text-sm md:text-base lg:text-lg xl:text-xl xl1440:text-2xl xl2560:text-3xl leading-relaxed">
-        Savor in the authentic flavors of the Mediterranean, where each dish is crafted using only the freshest and top-quality ingredients. Our menu is designed to bring the true essence of the region directly to your table.
-      </p>
-    </div>
-
-    <!-- Feature 3 -->
-    <div class="flex flex-col items-center text-center md:text-left md:items-start bg-[#1a1a1a] p-4 xs320:p-3 xs375:p-4 xs425:p-5 md:p-6 lg:p-8 xl:p-10 xl1440:p-12 xl2560:p-16 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-transform flex-1 min-w-[250px] xl2560:min-w-[350px]">
-      <div class="w-20 xs320:w-16 xs375:w-18 md:w-24 lg:w-28 xl:w-32 xl1440:w-36 xl2560:w-40 h-20 xs320:h-16 xs375:h-18 md:h-24 lg:h-28 xl:h-32 xl1440:h-36 xl2560:h-40 mb-4">
-        <img src="images/Copy-of-Untitled-Design-2.webp" alt="Hookah Icon" class="w-full h-full object-contain">
-      </div>
-      <h3 class="text-[#D4AF37] text-lg xs320:text-sm xs375:text-base md:text-xl lg:text-2xl xl:text-3xl xl1440:text-4xl xl2560:text-5xl font-semibold mb-2">The Ultimate Hookah Experience</h3>
-      <p class="text-[#FFE8D0] text-sm xs320:text-xs xs375:text-sm md:text-base lg:text-lg xl:text-xl xl1440:text-2xl xl2560:text-3xl leading-relaxed">
-        At Majlis, we offer more than just great food. Our lounge provides a comfortable space to relax and enjoy an exceptional range of premium hookah flavors, perfect for relaxing with friends and creating lasting memories.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<!-- Our Story Section -->
-<section id="our-story" class="relative w-full bg-[#0D1317]">
-  <div class="relative z-30 max-w-[2400px] mx-auto flex flex-col md:flex-row items-stretch justify-between px-4 xs320:px-4 xs375:px-6 xs425:px-8 md:px-16 lg:px-20 xl:px-24 xl1440:px-32 xl2560:px-64 py-16 xs320:py-12 xs375:py-16 xs425:py-20 md:py-24 lg:py-28 xl:py-32 xl1440:py-36 xl2560:py-48 gap-6 xs320:gap-4 xs375:gap-5 xs425:gap-6 md:gap-12 lg:gap-14 xl:gap-16 xl1440:gap-20 xl2560:gap-24">
-
-    <!-- Left: Image -->
-    <div class="md:w-1/2 flex justify-center md:justify-start">
-      <img 
-        src="images/WhatsApp-Image-2025-01-06-at-14.44.06_20763d73-2048x1366.webp" 
-        alt="Majlis Story" 
-        class="rounded-lg shadow-xl w-full h-auto md:h-full object-cover"
-      >
-    </div>
-
-    <!-- Right: Text -->
-    <div class="md:w-1/2 flex flex-col gap-4 xs320:gap-3 xs375:gap-4 xs425:gap-5 md:gap-6 text-left text-[#FFE8D0]">
-      <h2 class="text-[#D4AF37] text-xl xs320:text-lg xs375:text-xl xs425:text-xl md:text-2xl lg:text-3xl xl:text-3xl xl1440:text-4xl xl2560:text-5xl font-semibold">Our Story</h2>
-      <h3 class="text-2xl xs320:text-xl xs375:text-xl xs425:text-xl md:text-3xl lg:text-4xl xl:text-4xl xl1440:text-5xl xl2560:text-6xl font-bold leading-snug">The Tale of Majlis</h3>
-      <p class="text-base xs320:text-sm xs375:text-sm xs425:text-sm md:text-lg lg:text-xl xl:text-xl xl1440:text-2xl xl2560:text-3xl leading-relaxed">
-        Majlis of New York, established in 2011 by Rizwan Siddiqui, is an outstanding Hookah Bar and Lounge that brings the lavish feel of Dubai and Europe to New York. A top spot for locals and foreigners, offering premium and outclass Halal Hookah experiences and a special mix of cross-cultural cuisine. The elegant atmosphere sets it up as a great place to meditate, relax and enjoy delicious food, while experiencing unique social gatherings.
-      </p>
-      <p class="text-base xs320:text-sm xs375:text-sm xs425:text-sm md:text-lg lg:text-xl xl:text-xl xl1440:text-2xl xl2560:text-3xl font-semibold mt-2">Any query: <span class="text-[#D4AF37]">+1 718-343-4869</span></p>
-      <button class="mt-4 xs320:mt-3 bg-[#D4AF37] text-[#0D1317] font-semibold py-2 xs320:py-1 xs375:py-2 xs425:py-2 md:py-3 px-6 rounded-md hover:scale-105 hover:shadow-lg transition transform w-fit">
-        More About Us
-      </button>
-    </div>
-
-  </div>
-</section>
-
+ </section>
 
     <script src="script.js"></script>
   </body>
