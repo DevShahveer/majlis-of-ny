@@ -24,3 +24,4 @@ document.addEventListener("click", (e) => {
     mobnav.classList.add("-translate-x-full"); // Close sidebar
   }
 });
+
