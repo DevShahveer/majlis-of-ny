@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Majlis of NY</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
     <link rel="stylesheet" href="output.css">
   </head>
   <body>
@@ -206,67 +207,129 @@
 
     <!-- Hero Section -->
     <section id="hero" class="relative w-full h-screen">
-      <div class="absolute top-0 left-0 w-full h-full bg-black/40 z-0"></div>
-      <video
-        src="images/Majlis of Ny.mp4"
-        autoplay
-        muted
-        loop
-        class="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
-      ></video>
-      <div
-        id="hero-text"
-        class="absolute bottom-20 left-10 text-left z-10 max-w-lg xs320:bottom-0 xs320:left-0 xs320:p-6 md:p-4 lg:p-8 xl1440:p-12 xl2560:p-24 xl2560:space-y-10"
+  <div class="absolute top-0 left-0 w-full h-full bg-black/40 z-0"></div>
+  <video
+    src="images/Majlis of Ny.mp4"
+    autoplay
+    muted
+    loop
+    class="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
+  ></video>
+
+  <div
+    id="hero-text"
+    class="absolute bottom-20 left-10 text-left z-10 max-w-lg xs320:bottom-0 xs320:left-0 xs320:p-6 md:p-4 lg:p-8 xl1440:p-12 xl2560:p-24 xl2560:space-y-10"
+  >
+    <!-- Hero Title -->
+    <h1
+      class="text-5xl font-bold text-[#D4AF37] mb-4 xs320:text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl1440:text-6xl xl2560:text-7xl xl2560:whitespace-nowrap"
+      data-aos="fade-up"
+      data-aos-duration="1200"
+    >
+      Welcome to Majlis of New York
+    </h1>
+
+    <!-- Subtitle -->
+    <p
+      class="text-[#ececec] text-lg mb-6 xs320:text-base sm:text-lg md:text-xl lg:text-2xl xl1440:text-3xl xl2560:text-4xl xl2560:whitespace-nowrap"
+      data-aos="fade-up"
+      data-aos-delay="200"
+      data-aos-duration="1200"
+    >
+      A luxury hookah bar and bistro, inspired by the charm of Dubai and Europe.
+    </p>
+
+    <!-- Buttons -->
+    <div
+      class="flex flex-col xs320:flex-col xs375:flex-col xs425:flex-col gap-3 justify-start xl2560:gap-10 md:flex-row"
+      data-aos="fade-up"
+      data-aos-delay="400"
+      data-aos-duration="1200"
+    >
+      <button
+        class="xs320:w-40 xs375:w-44 xs425:w-48 sm:w-56 bg-[#D4AF37] text-white py-4 px-2 rounded hover:bg-opacity-90 transition hover:shadow-md hover:scale-105 hover:text-[#D4af37] hover:bg-white md:px-3 md:py-3 lg:px-6 lg:py-4 xl1440:px-10 xl1440:py-5 xl1440:w-80 xl:text-xl xl2560:px-14 xl2560:py-8 xl2560:text-4xl xl2560:whitespace-nowrap"
       >
-        <h1
-          class="text-5xl font-bold text-[#D4AF37] mb-4 xs320:text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl1440:text-6xl xl2560:text-7xl xl2560:whitespace-nowrap"
-        >
-          Welcome to Majlis of New York
-        </h1>
-        <p
-          class="text-[#ececec] text-lg mb-6 xs320:text-base sm:text-lg md:text-xl lg:text-2xl xl1440:text-3xl xl2560:text-4xl xl2560:whitespace-nowrap"
-        >
-          A luxury hookah bar and bistro, inspired by the charm of Dubai and
-          Europe.
-        </p>
-        <div
-          class="flex flex-col xs320:flex-col xs375:flex-col xs425:flex-col gap-3 justify-start xl2560:gap-10 md:flex-row"
-        >
-          <button
-            class="xs320:w-40 xs375:w-44 xs425:w-48 sm:w-56 bg-[#D4AF37] text-white py-4 px-2 rounded hover:bg-opacity-90 transition hover:shadow-md hover:scale-105 hover:text-[#D4af37] hover:bg-white md:px-3 md:py-3 lg:px-6 lg:py-4 xl1440:px-10 xl1440:py-5 xl1440:w-80 xl:text-xl xl2560:px-14 xl2560:py-8 xl2560:text-4xl xl2560:whitespace-nowrap"
-          >
-            Book a Table
-          </button>
-          <button
-            class="xs320:w-40 xs375:w-44 xs425:w-48 sm:w-56 bg-white text-[#D4AF37] py-4 px-2 rounded hover:bg-opacity-90 transition md:px-3 md:py-3 lg:px-6 lg:py-4 xl1440:px-10 xl1440:py-5 xl1440:w-80 xl:text-xl xl2560:px-14 xl2560:py-8 xl2560:text-4xl hover:scale-105 hover:bg-[#d4af37] hover:text-white xl2560:whitespace-nowrap"
-          >
-            Order Online
-          </button>
-        </div>
-      </div>
-    </section>
+        Book a Table
+      </button>
+      <button
+        class="xs320:w-40 xs375:w-44 xs425:w-48 sm:w-56 bg-white text-[#D4AF37] py-4 px-2 rounded hover:bg-opacity-90 transition md:px-3 md:py-3 lg:px-6 lg:py-4 xl1440:px-10 xl1440:py-5 xl1440:w-80 xl:text-xl xl2560:px-14 xl2560:py-8 xl2560:text-4xl hover:scale-105 hover:bg-[#d4af37] hover:text-white xl2560:whitespace-nowrap"
+      >
+        Order Online
+      </button>
+    </div>
+  </div>
+</section>
+
 
 
 <!-- Intro Section -->
- <section id="intro" class="flex flex-col lg:flex lg:flex-row h-auto md:p-4 bg-[#0d1317] md:pb-10 overflow-x-hidden lg:gap-12 lg:p-8 items-center xs320:p-6">
-    <div id="intro-txt" class="flex flex-col md:mt-10 gap-8">
-    <h2 class="text-[#ffe8d0] font-semibold md:text-xl font-sans uppercase xl2560:text-4xl sm:text-xl">Step Into Majlis New York!</h2>
-    <h1 class="text-[#ffe8d0] font-normal md:text-5xl font-serif xl2560:text-6xl xs320:text-2xl sm:text-3xl">Majlis of New York: A Premier Hookah Bar & Restaurant:</h1>
-    <p  class="text-[#ffe8d0] font-sans md:text-base lg:text-xl xl2560:text-3xl sm:text-xl">Majlis of New York stands as a top-tier destination, offering a unique combination of premium halal hookah and Cross-cultural Southern European cooking. With an atmosphere of refined grace, Majlis is the place where comfort meets elegance, creating the Ideal location for memorable meetups.</p>
-    <div id="intro-button" class="flex lg:mt-8">
-      <button class="text-[#ffe8d0] md:text-base lg:text-xl xl:text-2xl xl:font-medium xl2560:text-3xl xl2560:py-5 xl2560:px-10 xs320:px-3 xs320:py-1 sm:px-5 sm:py-2 border border-[#D4AF37] bg-[#D4AF37] md:px-5 md:py-2 md:rounded hover:scale-105 hover:bg-[#0d1317] hover:text-white transition duration-500 ">Read More</button>
+<section 
+  id="intro" 
+  class="flex flex-col lg:flex lg:flex-row h-auto md:p-4 bg-[#0d1317] md:pb-10 overflow-x-hidden lg:gap-12 lg:p-8 items-center xs320:p-6"
+>
+  <!-- Text Side -->
+  <div 
+    id="intro-txt" 
+    class="flex flex-col md:mt-10 gap-8"
+    data-aos="fade-right"
+    data-aos-delay="200"
+  >
+    <h2 
+      class="text-[#ffe8d0] font-semibold md:text-xl font-sans uppercase xl2560:text-4xl sm:text-xl"
+      data-aos="fade-up"
+      data-aos-delay="400"
+    >
+      Step Into Majlis New York!
+    </h2>
+
+    <h1 
+      class="text-[#ffe8d0] font-normal md:text-5xl font-serif xl2560:text-6xl xs320:text-2xl sm:text-3xl"
+      data-aos="fade-up"
+      data-aos-delay="600"
+    >
+      Majlis of New York: A Premier Hookah Bar & Restaurant:
+    </h1>
+
+    <p  
+      class="text-[#ffe8d0] font-sans md:text-base lg:text-xl xl2560:text-3xl sm:text-xl"
+      data-aos="fade-up"
+      data-aos-delay="800"
+    >
+      Majlis of New York stands as a top-tier destination, offering a unique combination of premium halal hookah and Cross-cultural Southern European cooking. With an atmosphere of refined grace, Majlis is the place where comfort meets elegance, creating the Ideal location for memorable meetups.
+    </p>
+
+    <div 
+      id="intro-button" 
+      class="flex lg:mt-8"
+      data-aos="zoom-in"
+      data-aos-delay="1000"
+    >
+      <button class="text-[#ffe8d0] md:text-base lg:text-xl xl:text-2xl xl:font-medium xl2560:text-3xl xl2560:py-5 xl2560:px-10 xs320:px-3 xs320:py-1 sm:px-5 sm:py-2 border border-[#D4AF37] bg-[#D4AF37] md:px-5 md:py-2 md:rounded hover:scale-105 hover:bg-[#0d1317] hover:text-white transition duration-500">
+        Read More
+      </button>
     </div>
   </div>
-  <div id="intro-pic" class="flex flex-col md:mt-10 xs320:mt-5">
-    <img src="images/imgabout.webp" class=" md:max-w-full lg:max-w-[500px] xl:max-w-[600px] xl2560:max-w-[1100px]" alt="">
+
+  <!-- Image Side -->
+  <div 
+    id="intro-pic" 
+    class="flex flex-col md:mt-10 xs320:mt-5"
+    data-aos="fade-left"
+    data-aos-delay="400"
+  >
+    <img 
+      src="images/imgabout.webp" 
+      class="md:max-w-full lg:max-w-[500px] xl:max-w-[600px] xl2560:max-w-[1100px]" 
+      alt="Majlis Interior"
+    >
   </div>
- </section>
+</section>
+
 
 <!-- Features -->
-
 <section id="Features" class="min-h-screen bg-[#11191f] flex flex-col items-center justify-center p-6">
   <!-- Heading -->
-  <div class="features-heading text-center mb-12 xl2560:mb-40">
+  <div class="features-heading text-center mb-12 xl2560:mb-40" data-aos="fade-up" data-aos-duration="1200">
     <h1 class="text-[#ffe8d0] text-3xl md:text-4xl xl1440:text-5xl xl2560:text-7xl font-bold tracking-wide">
       Why Choose Us
     </h1>
@@ -279,7 +342,7 @@
   <!-- Grid -->
   <div class="grid md:grid-cols-3 gap-6 xl:gap-10 xl1440:gap-12 xl2560:gap-20 w-full max-w-6xl lg:max-w-5xl xl:max-w-6xl xl1440:max-w-7xl xl2560:max-w-[2000px]">
     <!-- Card 1 -->
-    <div class="border border-[#906e4a] rounded-2xl p-5 xl:p-10 xl2560:p-20 flex flex-col items-center text-center h-full bg-[#0d1317] hover:bg-[#11191f] hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl xl2560:min-h-[800px]">
+    <div class="border border-[#906e4a] rounded-2xl p-5 xl:p-10 xl2560:p-20 flex flex-col items-center text-center h-full bg-[#0d1317] hover:bg-[#11191f] hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl xl2560:min-h-[800px]" data-aos="zoom-in" data-aos-duration="1000">
       <img src="images/Copy-of-Untitled-Design-1-300x300.webp" class="size-40 xs320:size-24 xs425:size-28 sm:size-32" alt="">
       <div class="features-text flex flex-col gap-3 mt-4 flex-1">
         <h1 class="text-[#ffe8d0] text-xl md:text-2xl font-bold xl1440:text-3xl xl2560:text-4xl">100% Halal Mastery</h1>
@@ -288,7 +351,7 @@
     </div>
     
     <!-- Card 2 -->
-    <div class="border border-[#906e4a] rounded-2xl p-5 xl:p-10 xl2560:p-20 flex flex-col items-center text-center h-full bg-[#0d1317] hover:bg-[#11191f] hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl xl2560:min-h-[800px]">
+    <div class="border border-[#906e4a] rounded-2xl p-5 xl:p-10 xl2560:p-20 flex flex-col items-center text-center h-full bg-[#0d1317] hover:bg-[#11191f] hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl xl2560:min-h-[800px]" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
       <img src="images/icon.webp" class="size-40 xs320:size-24 xs425:size-28 sm:size-32" alt="">
       <div class="features-text flex flex-col gap-3 mt-4 flex-1">
         <h1 class="text-[#ffe8d0] text-xl md:text-2xl font-bold xl1440:text-3xl xl2560:text-4xl">A Taste of the Mediterranean</h1>
@@ -297,7 +360,7 @@
     </div>
     
     <!-- Card 3 -->
-    <div class="border border-[#906e4a] rounded-2xl p-5 xl:p-10 xl2560:p-20 flex flex-col items-center text-center h-full bg-[#0d1317] hover:bg-[#11191f] hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl xl2560:min-h-[800px]">
+    <div class="border border-[#906e4a] rounded-2xl p-5 xl:p-10 xl2560:p-20 flex flex-col items-center text-center h-full bg-[#0d1317] hover:bg-[#11191f] hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl xl2560:min-h-[800px]" data-aos="zoom-in" data-aos-duration="1400" data-aos-delay="400">
       <img src="images/Copy-of-Untitled-Design-2.webp" class="size-40 xs320:size-24 xs425:size-28 sm:size-32" alt="">
       <div class="features-text flex flex-col gap-3 mt-4 flex-1">
         <h1 class="text-[#ffe8d0] text-xl md:text-2xl font-bold xl1440:text-3xl xl2560:text-4xl">The Ultimate Hookah Experience</h1>
@@ -308,36 +371,54 @@
 </section>
 
 <!-- Our Story -->
-<section id="ourstory" class="bg-[#0d1317] py-20">
-<!-- Wrapper container -->
- <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12 xl2560:gap-28 relative xs320:px-5 xs320:py-5 xs425:px-7 xs425:py-7">
-  <!-- img -->
-   <div class="relative">
-    <!-- Main image -->
-     <img src="images/WhatsApp-Image-2025-01-06-at-14.44.06_20763d73-2048x1366.webp" alt="Majlis Interior" class="rounded-2xl relative z-10 w-full h-auto object-cover hover:brightness-150 transition-all ease-in-out duration-700">
-     <!-- for decoration -->
-       <div class="absolute -top-6 -left-6 w-full h-full border-2 border-[#ffe8d0] rounded-2xl z-0"></div>
-   </div>
-   <!-- Text container -->
-    <div class="ourstory-text text-[#ffe8d0] space-y-6 md:p-5 lg:p-7">
-      <p class="uppercase tracking-widest text-sm text-[#c9a56a] lg:text-xl xl1440:text-2xl">Our Story</p>
-      <!-- Heading -->
-       <h2 class="text-3xl md:text-4xl xl1440:text-5xl font-bold xl2560:text-6xl">Where Tradition Meets Luxury</h2>
-       <!-- story para graph -->
-        <p class="lg:text-xl xl1440:text-2xl text-[#ffe8d0] xl2560:text-3xl">Majlis of New York, established in 2011 by Rizwan Siddiqui, is an outstanding Hookah Bar and Lounge that brings the lavish feel of Dubai and Europe to New York, a best spot for locals and foreigners, offering premium and outclass Halal Hookah experience and a special mix of cross-culture cuisine. The elegant atmosphere sets it up as a great place to meditate, relax and enjoy delicious food, while experiencing unique social gatherings.</p>
-        <div class="button">
-          <button class="border border-[#D4AF37] bg-[#D4AF37] xs320:px-3 xs320:py-1.5 lg:px-5 lg:py-2.5 xl1440:text-xl text-[#ffe8d0] hover:bg-[#0d1317] hover:text-white hover:scale-105 transition-all ease-in-out duration-500 font-medium">More About Us</button>
-        </div>
+<section id="ourstory" class="bg-[#0d1317] py-20 overflow-x-hidden">
+  <!-- Wrapper container -->
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12 xl2560:gap-28 relative xs320:px-5 xs320:py-5 xs425:px-7 xs425:py-7">
+    
+    <!-- img -->
+    <div class="relative" data-aos="fade-right" data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+      <!-- Main image -->
+      <img src="images/WhatsApp-Image-2025-01-06-at-14.44.06_20763d73-2048x1366.webp" 
+           alt="Majlis Interior" 
+           class="rounded-2xl relative z-10 w-full h-auto object-cover hover:brightness-150 transition-all ease-in-out duration-700">
+      <!-- for decoration -->
+      <div class="absolute -top-6 -left-6 w-full h-full border-2 border-[#ffe8d0] rounded-2xl z-0"></div>
     </div>
- </div>
+    
+    <!-- Text container -->
+    <div class="ourstory-text text-[#ffe8d0] space-y-6 md:p-5 lg:p-7"
+         data-aos="fade-left" data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+      
+      <p class="uppercase tracking-widest text-sm text-[#c9a56a] lg:text-xl xl1440:text-2xl">Our Story</p>
+      
+      <!-- Heading -->
+      <h2 class="text-3xl md:text-4xl xl1440:text-5xl font-bold xl2560:text-6xl">
+        Where Tradition Meets Luxury
+      </h2>
+      
+      <!-- story paragraph -->
+      <p class="lg:text-xl xl1440:text-2xl text-[#ffe8d0] xl2560:text-3xl">
+        Majlis of New York, established in 2011 by Rizwan Siddiqui, is an outstanding Hookah Bar and Lounge that brings the lavish feel of Dubai and Europe to New York, a best spot for locals and foreigners, offering premium and outclass Halal Hookah experience and a special mix of cross-culture cuisine. The elegant atmosphere sets it up as a great place to meditate, relax and enjoy delicious food, while experiencing unique social gatherings.
+      </p>
+      
+      <div class="button" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
+        <button class="border border-[#D4AF37] bg-[#D4AF37] xs320:px-3 xs320:py-1.5 lg:px-5 lg:py-2.5 xl1440:text-xl text-[#ffe8d0] hover:bg-[#0d1317] hover:text-white hover:scale-105 transition-all ease-in-out duration-500 font-medium">
+          More About Us
+        </button>
+      </div>
+    </div>
+  </div>
 </section>
+
 
 <!-- Trusted by our customers -->
 <section id="testimonials" class="bg-[#11191f] py-20">
-  <div class="max-w-7xl mx-auto text-center px-5 xs320:px-4 xs375:px-5 xs425:px-6">
+  <div class="max-w-7xl mx-auto text-center px-5 xs320:px-4 xs375:px-5 xs425:px-6" data-aos="fade-up">
     <!-- Heading -->
-    <p class="uppercase tracking-widest text-sm text-[#c9a56a] lg:text-lg xl1440:text-xl">Trusted by Our Customers</p>
-    <h2 class="text-3xl md:text-4xl xl1440:text-5xl xl2560:text-6xl font-bold text-[#ffe8d0] mt-3 mb-12">
+    <p class="uppercase tracking-widest text-sm text-[#c9a56a] lg:text-lg xl1440:text-xl" data-aos="fade-down" data-aos-delay="100">
+      Trusted by Our Customers
+    </p>
+    <h2 class="text-3xl md:text-4xl xl1440:text-5xl xl2560:text-6xl font-bold text-[#ffe8d0] mt-3 mb-12" data-aos="zoom-in" data-aos-delay="200">
       What People Say About Us
     </h2>
 
@@ -345,7 +426,8 @@
     <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl2560:gap-16">
       
       <!-- Review 1 -->
-      <div class="bg-[#11191f] border border-[#c9a56a] rounded-2xl p-6 shadow-lg hover:scale-105 hover:bg-[#0d1317] transition-all duration-500 ease-in-out">
+      <div class="bg-[#11191f] border border-[#c9a56a] rounded-2xl p-6 shadow-lg hover:scale-105 hover:bg-[#0d1317] transition-all duration-500 ease-in-out"
+           data-aos="fade-right" data-aos-delay="200">
         <p class="text-[#ffe8d0] text-sm md:text-base xl1440:text-lg xl2560:text-xl leading-relaxed">
           Majlis is my go-to place when I want to unwind. The ambiance is pure luxury and the hookah flavors are unmatched. Definitely a 10/10 experience every time.
         </p>
@@ -356,7 +438,8 @@
       </div>
 
       <!-- Review 2 -->
-      <div class="bg-[#11191f] border border-[#c9a56a] rounded-2xl p-6 shadow-lg hover:scale-105 hover:bg-[#0d1317] transition-all duration-500 ease-in-out">
+      <div class="bg-[#11191f] border border-[#c9a56a] rounded-2xl p-6 shadow-lg hover:scale-105 hover:bg-[#0d1317] transition-all duration-500 ease-in-out"
+           data-aos="fade-up" data-aos-delay="300">
         <p class="text-[#ffe8d0] text-sm md:text-base xl1440:text-lg xl2560:text-xl leading-relaxed">
           The best halal hookah lounge in New York. Amazing staff, delicious food, and a vibe that reminds me of Dubai nights. Truly a hidden gem.
         </p>
@@ -367,7 +450,8 @@
       </div>
 
       <!-- Review 3 -->
-      <div class="bg-[#11191f] border border-[#c9a56a] rounded-2xl p-6 shadow-lg hover:scale-105 hover:bg-[#0d1317] transition-all duration-500 ease-in-out">
+      <div class="bg-[#11191f] border border-[#c9a56a] rounded-2xl p-6 shadow-lg hover:scale-105 hover:bg-[#0d1317] transition-all duration-500 ease-in-out"
+           data-aos="fade-left" data-aos-delay="400">
         <p class="text-[#ffe8d0] text-sm md:text-base xl1440:text-lg xl2560:text-xl leading-relaxed">
           Every visit feels special. The interior design, the atmosphere, and the hospitality make Majlis a place where tradition truly meets luxury.
         </p>
@@ -381,15 +465,25 @@
   </div>
 </section>
 
+
 <!-- Order Online Section -->
-<section id="order-online" class="bg-[#0d1317] py-20">
+<section id="order-online" class="bg-[#0d1317] py-20 overflow-x-hidden">
   <div class="max-w-7xl mx-auto text-center px-5">
     
     <!-- Heading -->
-    <h2 class="text-3xl md:text-4xl xl1440:text-5xl xl2560:text-6xl font-bold text-[#ffe8d0]">
+    <h2 
+      class="text-3xl md:text-4xl xl1440:text-5xl xl2560:text-6xl font-bold text-[#ffe8d0]" 
+      data-aos="fade-down"
+      data-aos-duration="1000"
+    >
       Order Online
     </h2>
-    <p class="mt-4 text-[#c9a56a] text-base md:text-lg xl1440:text-xl xl2560:text-2xl max-w-2xl mx-auto">
+    <p 
+      class="mt-4 text-[#c9a56a] text-base md:text-lg xl1440:text-xl xl2560:text-2xl max-w-2xl mx-auto"
+      data-aos="fade-up"
+      data-aos-duration="1200"
+      data-aos-delay="200"
+    >
       Get your favorite dishes from Majlis delivered fast with Uber Eats, DoorDash, or Grubhub — fresh, hot, and straight to your door.
     </p>
     
@@ -397,10 +491,13 @@
     <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
       
       <!-- Uber Eats -->
-      <div class="bg-[#1a1f23] border border-[#c9a56a]/40 rounded-2xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-500">
-        <!-- Logo -->
+      <div 
+        class="bg-[#1a1f23] border border-[#c9a56a]/40 rounded-2xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-500"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        data-aos-delay="300"
+      >
         <img src="images/1615472172479.webp" alt="Uber Eats" class="w-28 h-auto mb-5">
-        
         <h3 class="text-[#ffe8d0] text-xl md:text-2xl font-semibold mb-3">Uber Eats</h3>
         <p class="text-[#ccc] text-sm md:text-base mb-6">Order your favorite Majlis dishes with Uber Eats.</p>
         <a href="#" class="border border-[#D4AF37] bg-[#D4AF37] text-[#0d1317] px-4 py-2 rounded-lg font-medium hover:bg-transparent hover:text-[#ffe8d0] transition-all duration-500">
@@ -409,10 +506,13 @@
       </div>
 
       <!-- DoorDash -->
-      <div class="bg-[#1a1f23] border border-[#c9a56a]/40 rounded-2xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-500">
-        <!-- Logo -->
+      <div 
+        class="bg-[#1a1f23] border border-[#c9a56a]/40 rounded-2xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-500"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        data-aos-delay="500"
+      >
         <img src="images/Doordash-PNG-Image.webp" alt="DoorDash" class="w-28 h-auto mb-5">
-
         <h3 class="text-[#ffe8d0] text-xl md:text-2xl font-semibold mb-3">DoorDash</h3>
         <p class="text-[#ccc] text-sm md:text-base mb-6">Enjoy Majlis meals delivered hot and fast with DoorDash.</p>
         <a href="#" class="border border-[#D4AF37] bg-[#D4AF37] text-[#0d1317] px-4 py-2 rounded-lg font-medium hover:bg-transparent hover:text-[#ffe8d0] transition-all duration-500">
@@ -421,13 +521,16 @@
       </div>
 
       <!-- Grubhub -->
-      <div class="bg-[#1a1f23] border border-[#c9a56a]/40 rounded-2xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-500">
-        <!-- Logo -->
+      <div 
+        class="bg-[#1a1f23] border border-[#c9a56a]/40 rounded-2xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-500"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        data-aos-delay="700"
+      >
         <img src="images/1656237869grubhub-old-logo.webp" alt="Grubhub" class="w-28 h-auto mb-5">
-
         <h3 class="text-[#ffe8d0] text-xl md:text-2xl font-semibold mb-3">Grubhub</h3>
         <p class="text-[#ccc] text-sm md:text-base mb-6">Get Majlis specialties through Grubhub.</p>
-        <a href="#" class="border border-[#D4AF37] bg-[#D4AF37] text-[#0d1317] px-4 py-2 rounded-lg font-medium hover:bg-transparent hover:text-[#ffe8d0] transition-all duration-500  mt-5">
+        <a href="#" class="border border-[#D4AF37] bg-[#D4AF37] text-[#0d1317] px-4 py-2 rounded-lg font-medium hover:bg-transparent hover:text-[#ffe8d0] transition-all duration-500 mt-5">
           ORDER NOW
         </a>
       </div>
@@ -435,18 +538,19 @@
   </div>
 </section>
 
+
 <!-- Event Collaboration Section -->
 <section id="event-collaboration" class="bg-[#11191f] py-20">
   <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-12 items-center">
     
     <!-- Left: 2 stacked images -->
-    <div class="space-y-6">
+    <div class="space-y-6" data-aos="fade-right" data-aos-duration="1200">
       <img src="images/17-1024x576.webp" alt="Birthday Celebration" class="rounded-2xl shadow-lg">
       <img src="images/13-1024x576.webp" alt="Wedding Celebration" class="rounded-2xl shadow-lg">
     </div>
     
     <!-- Right: Text content -->
-    <div>
+    <div data-aos="fade-left" data-aos-duration="1200">
       <h2 class="text-3xl md:text-4xl xl1440:text-5xl xl2560:text-6xl font-bold text-[#ffe8d0] mb-4">
         Event Collaboration
       </h2>
@@ -456,7 +560,7 @@
       </p>
       
       <!-- Event Descriptions -->
-      <div class="mb-6">
+      <div class="mb-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
         <h3 class="text-2xl md:text-3xl font-semibold text-[#ffe8d0] mb-2">Birthday Bash</h3>
         <p class="text-[#ccc] text-sm md:text-base lg:text-xl">
           Celebrate your special day with elegance at Majlis! Whether it’s a small gathering or a large birthday bash, 
@@ -464,7 +568,7 @@
         </p>
       </div>
       
-      <div class="mb-8">
+      <div class="mb-8" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
         <h3 class="text-2xl md:text-3xl font-semibold text-[#ffe8d0] mb-2">Intimate Gatherings</h3>
         <p class="text-[#ccc] text-sm md:text-base lg:text-xl">
           Say 'I do' at Majlis! Regardless of whether you’re planning a private, intimate meetup or a customized wedding 
@@ -473,7 +577,8 @@
       </div>
       
       <!-- Contact Button -->
-      <a href="#contact" class="inline-block border border-[#D4AF37] bg-[#D4AF37] text-[#0d1317] px-6 py-3 rounded-lg font-medium hover:bg-transparent hover:text-[#ffe8d0] transition-all duration-500 hover:scale-105">
+      <a href="#contact" class="inline-block border border-[#D4AF37] bg-[#D4AF37] text-[#0d1317] px-6 py-3 rounded-lg font-medium hover:bg-transparent hover:text-[#ffe8d0] transition-all duration-500 hover:scale-105" 
+         data-aos="zoom-in" data-aos-delay="600" data-aos-duration="1000">
         Contact Us
       </a>
     </div>
@@ -481,12 +586,13 @@
   </div>
 </section>
 
+
 <!-- Dress Code Section -->
 <section id="dresscode" class="relative bg-[#0b0f13] py-20">
   <div class="max-w-7xl mx-auto px-5 md:px-10 lg:px-16 xl:px-20 xl2560:px-40">
 
     <!-- Heading -->
-    <div class="text-center mb-16">
+    <div class="text-center mb-16" data-aos="fade-down" data-aos-duration="1000">
       <h2 class="text-3xl md:text-4xl xl1440:text-5xl xl2560:text-6xl font-bold text-[#f5e6c5] tracking-wide">
         Dress Code & Policies
       </h2>
@@ -500,7 +606,8 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 xl1440:gap-16">
 
       <!-- Left Column (Dress Code Rules) -->
-      <div class="bg-[#11161c]/80 border border-[#d4af37]/30 rounded-2xl shadow-lg shadow-black/50 p-8 xl1440:p-10 transition hover:border-[#d4af37]/60">
+      <div class="bg-[#11161c]/80 border border-[#d4af37]/30 rounded-2xl shadow-lg shadow-black/50 p-8 xl1440:p-10 transition hover:border-[#d4af37]/60"
+           data-aos="fade-right" data-aos-duration="1200">
         <h3 class="text-2xl xl1440:text-3xl font-semibold text-[#d4af37] mb-6">Dress Code</h3>
         <ul class="space-y-3 text-[#f5e6c5] text-sm md:text-base xl1440:text-lg xl2560:text-xl">
           <li class="flex items-start gap-3"><span class="text-[#d4af37]">✦</span> NO HATS (Except Beanies)</li>
@@ -516,7 +623,8 @@
       </div>
 
       <!-- Right Column (Notice Section) -->
-      <div class="bg-[#11161c]/80 border border-[#d4af37]/30 rounded-2xl shadow-lg shadow-black/50 p-8 xl1440:p-10 transition hover:border-[#d4af37]/60">
+      <div class="bg-[#11161c]/80 border border-[#d4af37]/30 rounded-2xl shadow-lg shadow-black/50 p-8 xl1440:p-10 transition hover:border-[#d4af37]/60"
+           data-aos="fade-left" data-aos-duration="1200">
         <h3 class="text-2xl xl1440:text-3xl font-semibold text-[#d4af37] mb-6">Notice</h3>
         <p class="mb-4 text-[#f5e6c5] text-sm md:text-base xl1440:text-lg xl2560:text-xl">
           NO ALCOHOL ALLOWED WITHIN MAJLIS.
@@ -539,7 +647,7 @@
 </section>
 
 <!-- Footer -->
-<footer class="relative bg-gradient-to-b from-[#11191f] to-black overflow-hidden">
+<footer class="relative bg-gradient-to-b from-[#11191f] to-black overflow-hidden" data-aos="fade-up" data-aos-duration="1200">
   <!-- Gold shimmer overlay -->
   <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#d4af3755] to-transparent opacity-10"></div>
 
@@ -547,7 +655,7 @@
     <div class="grid md:grid-cols-3 gap-12 text-center md:text-left items-start">
 
       <!-- Left: Logo + About -->
-      <div class="space-y-5">
+      <div class="space-y-5" data-aos="fade-right" data-aos-delay="200">
         <!-- Logo Image -->
         <img src="images/MaJLIS-LOGO-qvo1rt4lc59dm8c3t6xlezp644ymcfkddefemt5fwq.webp" alt="Majlis Logo" class="mx-auto md:mx-0  drop-shadow-[0_0_8px_#d4af37]">
         
@@ -557,11 +665,8 @@
         </p>
       </div>
 
-      <!-- Vertical Divider (hidden on mobile) -->
-      <div class="hidden md:block w-px bg-gradient-to-b from-transparent via-[#d4af37]/40 to-transparent mx-auto"></div>
-
       <!-- Middle: Timings -->
-      <div class="space-y-4 text-[#f5e6c5]/90 text-sm md:text-base font-light">
+      <div class="space-y-4 text-[#f5e6c5]/90 text-sm md:text-base font-light" data-aos="fade-up" data-aos-delay="400">
         <h3 class="text-[#d4af37] font-serif text-lg md:text-xl tracking-wide border-b border-[#d4af37]/30 inline-block pb-1">
           Restaurant Hours
         </h3>
@@ -570,11 +675,8 @@
         <p><span class="text-[#c9a56a]">Sun:</span> 3:00 PM – 12:00 AM</p>
       </div>
 
-      <!-- Vertical Divider (hidden on mobile) -->
-      <div class="hidden md:block w-px bg-gradient-to-b from-transparent via-[#d4af37]/40 to-transparent mx-auto"></div>
-
       <!-- Right: Contact + Location -->
-      <div class="space-y-4 text-[#f5e6c5]/90 text-sm md:text-base font-light">
+      <div class="space-y-4 text-[#f5e6c5]/90 text-sm md:text-base font-light" data-aos="fade-left" data-aos-delay="600">
         <h3 class="text-[#d4af37] font-serif text-lg md:text-xl tracking-wide border-b border-[#d4af37]/30 inline-block pb-1">
           Our Location
         </h3>
@@ -583,13 +685,13 @@
 
         <!-- Social Icons -->
         <div class="flex md:justify-start justify-center space-x-6 pt-2">
-          <a href="#" class="text-[#d4af37] hover:text-[#f5e6c5] transition transform hover:scale-110 hover:drop-shadow-[0_0_8px_#d4af37] text-xl">
+          <a href="#" class="text-[#d4af37] hover:text-[#f5e6c5] transition transform hover:scale-110 hover:drop-shadow-[0_0_8px_#d4af37] text-xl" data-aos="zoom-in" data-aos-delay="700">
             <i class="fab fa-instagram"></i>
           </a>
-          <a href="#" class="text-[#d4af37] hover:text-[#f5e6c5] transition transform hover:scale-110 hover:drop-shadow-[0_0_8px_#d4af37] text-xl">
+          <a href="#" class="text-[#d4af37] hover:text-[#f5e6c5] transition transform hover:scale-110 hover:drop-shadow-[0_0_8px_#d4af37] text-xl" data-aos="zoom-in" data-aos-delay="800">
             <i class="fab fa-facebook"></i>
           </a>
-          <a href="#" class="text-[#d4af37] hover:text-[#f5e6c5] transition transform hover:scale-110 hover:drop-shadow-[0_0_8px_#d4af37] text-xl">
+          <a href="#" class="text-[#d4af37] hover:text-[#f5e6c5] transition transform hover:scale-110 hover:drop-shadow-[0_0_8px_#d4af37] text-xl" data-aos="zoom-in" data-aos-delay="900">
             <i class="fab fa-tiktok"></i>
           </a>
         </div>
@@ -597,13 +699,13 @@
     </div>
 
     <!-- Divider + Bottom -->
-    <div class="mt-12 border-t border-[#d4af37]/30 pt-6 text-center text-xs md:text-sm text-[#c9a56a]/80 tracking-wide">
+    <div class="mt-12 border-t border-[#d4af37]/30 pt-6 text-center text-xs md:text-sm text-[#c9a56a]/80 tracking-wide" data-aos="fade-up" data-aos-delay="1000">
       Majlis of New York © All Rights Reserved
     </div>
   </div>
 </footer>
-
 <!-- Font Awesome -->
+ <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
 
     <script src="script.js"></script>
