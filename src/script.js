@@ -25,9 +25,6 @@ document.addEventListener("click", (e) => {
   }
 });
 
-  AOS.init({
-    once: true,
-    duration: 1200,
-    offset: 80,
-    easing: 'ease-out-cubic',
+document.addEventListener("DOMContentLoaded", function() {
+    AOS.init({ once: true });
   });

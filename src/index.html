@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Majlis of NY</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
-    <link rel="stylesheet" href="output.css">
+    <!-- AOS CSS -->
+<link rel="stylesheet" href="../dist/aos.css">
+    <link href="../dist/output.css" rel="stylesheet">
+
+
   </head>
   <body>
     <!-- PC Navbar -->
@@ -14,11 +17,13 @@
       class="flex justify-between items-center p-8 sticky top-0 z-50 shadow-md bg-[#000000]/90 backdrop-blur-sm xl1440:p-8 xl2560:p-16 xl:p-9 whitespace-nowrap"
     >
       <div id="logo">
-        <img
-          src="images/MaJLIS-LOGO-qvo1rt4lc59dm8c3t6xlezp644ymcfkddefemt5fwq.webp"
-          class="xl1440:h-24 xl1440:w-24 xl2560:h-48 xl2560:w-48"
-          alt="Majlis of NY Logo"
-        />
+<img 
+  src="images/MaJLIS-LOGO-qvo1rt4lc59dm8c3t6xlezp644ymcfkddefemt5fwq.webp" 
+  alt="Majlis of NY Logo" 
+  class="xl1440:h-24 xl1440:w-24 xl2560:h-48 xl2560:w-48"
+  fetchpriority="high"
+  decoding="async">
+
       </div>
 
       <!-- Hamburger for mobile -->
@@ -208,13 +213,14 @@
     <!-- Hero Section -->
     <section id="hero" class="relative w-full h-screen">
   <div class="absolute top-0 left-0 w-full h-full bg-black/40 z-0"></div>
-  <video
-    src="images/Majlis of Ny.mp4"
-    autoplay
-    muted
-    loop
-    class="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
-  ></video>
+<video
+  src="images/Majlis of Ny.mp4"
+  autoplay
+  muted
+  loop
+  class="absolute top-0 left-0 w-full h-full object-cover z-[-1] md:h-[500px] sm:h-[300px]"
+></video>
+
 
   <div
     id="hero-text"
@@ -317,11 +323,22 @@
     data-aos="fade-left"
     data-aos-delay="400"
   >
-    <img 
-      src="images/imgabout.webp" 
-      class="md:max-w-full lg:max-w-[500px] xl:max-w-[600px] xl2560:max-w-[1100px]" 
-      alt="Majlis Interior"
-    >
+<img 
+  src="images/imgabout.webp" 
+  srcset="
+  images/imgabout.webp 400w,
+  images/imgabout.webp 800w,
+    images/imgabout.webp 1600w,
+    images/imgabout.webp 2560w
+  "
+  sizes="(max-width: 600px) 400px, 
+         (max-width: 1024px) 800px, 
+         (max-width: 1440px) 1600px, 
+         2560px"
+  alt="Majlis Interior"
+  class="md:max-w-full lg:max-w-[500px] xl:max-w-[600px] xl2560:max-w-[1100px]"
+  loading="lazy">
+
   </div>
 </section>
 
@@ -343,7 +360,20 @@
   <div class="grid md:grid-cols-3 gap-6 xl:gap-10 xl1440:gap-12 xl2560:gap-20 w-full max-w-6xl lg:max-w-5xl xl:max-w-6xl xl1440:max-w-7xl xl2560:max-w-[2000px]">
     <!-- Card 1 -->
     <div class="border border-[#906e4a] rounded-2xl p-5 xl:p-10 xl2560:p-20 flex flex-col items-center text-center h-full bg-[#0d1317] hover:bg-[#11191f] hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl xl2560:min-h-[800px]" data-aos="zoom-in" data-aos-duration="1000">
-      <img src="images/Copy-of-Untitled-Design-1-300x300.webp" class="size-40 xs320:size-24 xs425:size-28 sm:size-32" alt="">
+      <img 
+  src="images/Copy-of-Untitled-Design-1-300x300.webp" 
+  srcset="
+    images/Copy-of-Untitled-Design-1-300x300.webp 64w,
+    images/Copy-of-Untitled-Design-1-300x300.webp 96w,
+    images/Copy-of-Untitled-Design-1-300x300.webp 128w
+  "
+  sizes="(max-width: 600px) 64px, 
+         (max-width: 1024px) 96px, 
+         128px"
+  alt=""
+  class="size-40 xs320:size-24 xs425:size-28 sm:size-32"
+  loading="lazy">
+
       <div class="features-text flex flex-col gap-3 mt-4 flex-1">
         <h1 class="text-[#ffe8d0] text-xl md:text-2xl font-bold xl1440:text-3xl xl2560:text-4xl">100% Halal Mastery</h1>
         <p class="text-[#ffe8d0] text-left lg:text-sm xl:text-base xl1440:text-lg xl2560:text-3xl">All of our dishes are 100% halal, ensuring that you can enjoy authentic and flavorful meals, made with the highest standards of quality and integrity.</p>
@@ -361,7 +391,20 @@
     
     <!-- Card 3 -->
     <div class="border border-[#906e4a] rounded-2xl p-5 xl:p-10 xl2560:p-20 flex flex-col items-center text-center h-full bg-[#0d1317] hover:bg-[#11191f] hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl xl2560:min-h-[800px]" data-aos="zoom-in" data-aos-duration="1400" data-aos-delay="400">
-      <img src="images/Copy-of-Untitled-Design-2.webp" class="size-40 xs320:size-24 xs425:size-28 sm:size-32" alt="">
+     <img 
+  src="images/Copy-of-Untitled-Design-2.webp" 
+  srcset="
+    images/Copy-of-Untitled-Design-2.webp 64w,
+    images/Copy-of-Untitled-Design-2.webp 96w,
+    images/Copy-of-Untitled-Design-2.webp 128w
+  "
+  sizes="(max-width: 600px) 64px, 
+         (max-width: 1024px) 96px, 
+         128px"
+  alt=""
+  class="size-40 xs320:size-24 xs425:size-28 sm:size-32"
+  loading="lazy">
+
       <div class="features-text flex flex-col gap-3 mt-4 flex-1">
         <h1 class="text-[#ffe8d0] text-xl md:text-2xl font-bold xl1440:text-3xl xl2560:text-4xl">The Ultimate Hookah Experience</h1>
         <p class="text-[#ffe8d0] text-left lg:text-sm xl:text-base xl1440:text-lg xl2560:text-3xl">At Majlis, we offer more than just great food. Our lounge provides a comfortable space to relax and enjoy an exceptional range of premium hookah flavors, perfect for relaxing with friends and creating lasting memories.</p>
@@ -378,9 +421,21 @@
     <!-- img -->
     <div class="relative" data-aos="fade-right" data-aos-duration="1200" data-aos-easing="ease-out-cubic">
       <!-- Main image -->
-      <img src="images/WhatsApp-Image-2025-01-06-at-14.44.06_20763d73-2048x1366.webp" 
-           alt="Majlis Interior" 
-           class="rounded-2xl relative z-10 w-full h-auto object-cover hover:brightness-150 transition-all ease-in-out duration-700">
+      <img 
+  src="images/WhatsApp-Image-2025-01-06-at-14.44.06_20763d73-2048x1366.webp" 
+  srcset="
+    images/WhatsApp-Image-2025-01-06-at-14.44.06_20763d73-2048x1366.webp 400w,
+    images/WhatsApp-Image-2025-01-06-at-14.44.06_20763d73-2048x1366.webp 800w,
+    images/WhatsApp-Image-2025-01-06-at-14.44.06_20763d73-2048x1366.webp 1600w,
+    images/WhatsApp-Image-2025-01-06-at-14.44.06_20763d73-2048x1366.webp 2048w
+  " 
+  sizes="(max-width: 600px) 400px, 
+         (max-width: 1024px) 800px, 
+         (max-width: 1440px) 1600px, 
+         2048px"
+  alt="Majlis Interior" 
+  class="rounded-2xl relative z-10 w-full h-auto object-cover hover:brightness-150 transition-all ease-in-out duration-700"
+  loading="lazy">
       <!-- for decoration -->
       <div class="absolute -top-6 -left-6 w-full h-full border-2 border-[#ffe8d0] rounded-2xl z-0"></div>
     </div>
@@ -497,7 +552,20 @@
         data-aos-duration="1000"
         data-aos-delay="300"
       >
-        <img src="images/1615472172479.webp" alt="Uber Eats" class="w-28 h-auto mb-5">
+        <img 
+  src="images/1615472172479.webp" 
+  srcset="
+    images/1615472172479.webp 64w,
+    images/1615472172479.webp 128w,
+    images/1615472172479.webp 256w
+  "
+  sizes="(max-width: 600px) 64px, 
+         (max-width: 1024px) 128px, 
+         256px"
+  alt="Uber Eats"
+  class="w-28 h-auto mb-5"
+  loading="lazy">
+
         <h3 class="text-[#ffe8d0] text-xl md:text-2xl font-semibold mb-3">Uber Eats</h3>
         <p class="text-[#ccc] text-sm md:text-base mb-6">Order your favorite Majlis dishes with Uber Eats.</p>
         <a href="#" class="border border-[#D4AF37] bg-[#D4AF37] text-[#0d1317] px-4 py-2 rounded-lg font-medium hover:bg-transparent hover:text-[#ffe8d0] transition-all duration-500">
@@ -512,7 +580,20 @@
         data-aos-duration="1000"
         data-aos-delay="500"
       >
-        <img src="images/Doordash-PNG-Image.webp" alt="DoorDash" class="w-28 h-auto mb-5">
+        <img 
+  src="images/Doordash-PNG-Image.webp" 
+  srcset="
+    images/Doordash-PNG-Image.webp 64w,
+    images/Doordash-PNG-Image.webp 128w,
+    images/Doordash-PNG-Image.webp 256w
+  "
+  sizes="(max-width: 600px) 64px, 
+         (max-width: 1024px) 128px, 
+         256px"
+  alt="DoorDash"
+  class="w-28 h-auto mb-5"
+  loading="lazy">
+
         <h3 class="text-[#ffe8d0] text-xl md:text-2xl font-semibold mb-3">DoorDash</h3>
         <p class="text-[#ccc] text-sm md:text-base mb-6">Enjoy Majlis meals delivered hot and fast with DoorDash.</p>
         <a href="#" class="border border-[#D4AF37] bg-[#D4AF37] text-[#0d1317] px-4 py-2 rounded-lg font-medium hover:bg-transparent hover:text-[#ffe8d0] transition-all duration-500">
@@ -527,7 +608,20 @@
         data-aos-duration="1000"
         data-aos-delay="700"
       >
-        <img src="images/1656237869grubhub-old-logo.webp" alt="Grubhub" class="w-28 h-auto mb-5">
+       <img 
+  src="images/1656237869grubhub-old-logo.webp" 
+  srcset="
+    images/1656237869grubhub-old-logo.webp 64w,
+    images/1656237869grubhub-old-logo.webp 128w,
+    images/1656237869grubhub-old-logo.webp 256w
+  "
+  sizes="(max-width: 600px) 64px, 
+         (max-width: 1024px) 128px, 
+         256px"
+  alt="Grubhub"
+  class="w-28 h-auto mb-5"
+  loading="lazy">
+
         <h3 class="text-[#ffe8d0] text-xl md:text-2xl font-semibold mb-3">Grubhub</h3>
         <p class="text-[#ccc] text-sm md:text-base mb-6">Get Majlis specialties through Grubhub.</p>
         <a href="#" class="border border-[#D4AF37] bg-[#D4AF37] text-[#0d1317] px-4 py-2 rounded-lg font-medium hover:bg-transparent hover:text-[#ffe8d0] transition-all duration-500 mt-5">
@@ -545,8 +639,34 @@
     
     <!-- Left: 2 stacked images -->
     <div class="space-y-6" data-aos="fade-right" data-aos-duration="1200">
-      <img src="images/17-1024x576.webp" alt="Birthday Celebration" class="rounded-2xl shadow-lg">
-      <img src="images/13-1024x576.webp" alt="Wedding Celebration" class="rounded-2xl shadow-lg">
+      <img 
+  src="images/17-1024x576.webp" 
+  srcset="
+    images/17-1024x576.webp 400w,
+    images/17-1024x576.webp 800w,
+    images/17-1024x576.webp  1024w
+  "
+  sizes="(max-width: 600px) 400px, 
+         (max-width: 1024px) 800px, 
+         1024px"
+  alt="Birthday Celebration"
+  class="rounded-2xl shadow-lg"
+  loading="lazy">
+
+<img 
+  src="images/13-1024x576.webp" 
+  srcset="
+    images/13-1024x576.webp 400w,
+    images/13-1024x576.webp 800w,
+    images/13-1024x576.webp  1024w
+  "
+  sizes="(max-width: 600px) 400px, 
+         (max-width: 1024px) 800px, 
+         1024px"
+  alt="Wedding Celebration"
+  class="rounded-2xl shadow-lg"
+  loading="lazy">
+
     </div>
     
     <!-- Right: Text content -->
@@ -704,10 +824,9 @@
     </div>
   </div>
 </footer>
-<!-- Font Awesome -->
- <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<!-- Font Awesome and Aos -->
+<script src="../dist/aos.js" defer></script>
 <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
-
     <script src="script.js"></script>
   </body>
 </html>
