@@ -1,24 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html class="overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Majlis of NY</title>
     <!-- AOS CSS -->
-<link rel="stylesheet" href="dist/aos.css">
-    <link href="dist/output.css" rel="stylesheet">
+     <link rel="stylesheet" href="/public/libs/aos.css">
+     <link rel="stylesheet" href="../dist/output.css">
 
 
+ 
   </head>
-  <body>
+  <body class="overflow-x-hidden overflow-y-hidden">
+    <main>
     <!-- PC Navbar -->
+     
     <section
       id="navigation-bar"
       class="flex justify-between items-center p-8 sticky top-0 z-50 shadow-md bg-[#000000]/90 backdrop-blur-sm xl1440:p-8 xl2560:p-16 xl:p-9 whitespace-nowrap"
     >
       <div id="logo">
 <img 
-  src="images/MaJLIS-LOGO-qvo1rt4lc59dm8c3t6xlezp644ymcfkddefemt5fwq.webp" 
+  src="/public/images/MaJLIS-LOGO-qvo1rt4lc59dm8c3t6xlezp644ymcfkddefemt5fwq.webp" 
   alt="Majlis of NY Logo" 
   class="xl1440:h-24 xl1440:w-24 xl2560:h-48 xl2560:w-48"
   fetchpriority="high"
@@ -211,14 +214,15 @@
     </section>
 
     <!-- Hero Section -->
-    <section id="hero" class="relative w-full h-screen">
+    <section id="hero" class="relative w-full h-screen xs320:h-[500px] xs425:h-[600px] lg:h-screen">
   <div class="absolute top-0 left-0 w-full h-full bg-black/40 z-0"></div>
 <video
-  src="images/Majlis of Ny.mp4"
+  src="/public/videos/Majlis of Ny (1).mp4"
   autoplay
   muted
   loop
-  class="absolute top-0 left-0 w-full h-full object-cover z-[-1] md:h-[500px] sm:h-[300px]"
+  preload="none"
+  class="absolute top-0 left-0 w-full h-screen object-cover z-[-1] xs320:h-[500px] xs425:h-[600px] md:h-full lg:h-screen"
 ></video>
 
 
@@ -271,7 +275,7 @@
 <!-- Intro Section -->
 <section 
   id="intro" 
-  class="flex flex-col lg:flex lg:flex-row h-auto md:p-4 bg-[#0d1317] md:pb-10 overflow-x-hidden lg:gap-12 lg:p-8 items-center xs320:p-6"
+  class="flex flex-col lg:flex lg:flex-row h-auto md:p-4 bg-[#0d1317] md:pb-10 lg:gap-12 lg:p-8 items-center xs320:p-6 overflow-x-hidden"
 >
   <!-- Text Side -->
   <div 
@@ -324,12 +328,12 @@
     data-aos-delay="400"
   >
 <img 
-  src="images/imgabout.webp" 
+  src="/public/images/imgabout.webp" 
   srcset="
-  images/imgabout.webp 400w,
-  images/imgabout.webp 800w,
-    images/imgabout.webp 1600w,
-    images/imgabout.webp 2560w
+  /public/images/imgabout.webp 400w,
+  /public/images/imgabout.webp 800w,
+    /public/images/imgabout.webp 1600w,
+    /public/images/imgabout.webp 2560w
   "
   sizes="(max-width: 600px) 400px, 
          (max-width: 1024px) 800px, 
@@ -344,7 +348,7 @@
 
 
 <!-- Features -->
-<section id="Features" class="min-h-screen bg-[#11191f] flex flex-col items-center justify-center p-6">
+<section id="Features" class="min-h-screen bg-[#11191f] flex flex-col items-center justify-center p-6 overflow-x-hidden">
   <!-- Heading -->
   <div class="features-heading text-center mb-12 xl2560:mb-40" data-aos="fade-up" data-aos-duration="1200">
     <h1 class="text-[#ffe8d0] text-3xl md:text-4xl xl1440:text-5xl xl2560:text-7xl font-bold tracking-wide">
@@ -359,13 +363,13 @@
   <!-- Grid -->
   <div class="grid md:grid-cols-3 gap-6 xl:gap-10 xl1440:gap-12 xl2560:gap-20 w-full max-w-6xl lg:max-w-5xl xl:max-w-6xl xl1440:max-w-7xl xl2560:max-w-[2000px]">
     <!-- Card 1 -->
-    <div class="border border-[#906e4a] rounded-2xl p-5 xl:p-10 xl2560:p-20 flex flex-col items-center text-center h-full bg-[#0d1317] hover:bg-[#11191f] hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl xl2560:min-h-[800px]" data-aos="zoom-in" data-aos-duration="1000">
+    <div class="border border-[#906e4a] rounded-2xl p-5 xl:p-10 xl2560:p-20 flex flex-col items-center text-center h-full bg-[#0d1317] hover:bg-[#11191f] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl xl2560:min-h-[800px]">
       <img 
-  src="images/Copy-of-Untitled-Design-1-300x300.webp" 
+  src="/public/images/Copy-of-Untitled-Design-1-300x300.webp" 
   srcset="
-    images/Copy-of-Untitled-Design-1-300x300.webp 64w,
-    images/Copy-of-Untitled-Design-1-300x300.webp 96w,
-    images/Copy-of-Untitled-Design-1-300x300.webp 128w
+    /public/images/Copy-of-Untitled-Design-1-300x300.webp 64w,
+    /public/images/Copy-of-Untitled-Design-1-300x300.webp 96w,
+    /public/images/Copy-of-Untitled-Design-1-300x300.webp 128w
   "
   sizes="(max-width: 600px) 64px, 
          (max-width: 1024px) 96px, 
@@ -381,8 +385,8 @@
     </div>
     
     <!-- Card 2 -->
-    <div class="border border-[#906e4a] rounded-2xl p-5 xl:p-10 xl2560:p-20 flex flex-col items-center text-center h-full bg-[#0d1317] hover:bg-[#11191f] hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl xl2560:min-h-[800px]" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
-      <img src="images/icon.webp" class="size-40 xs320:size-24 xs425:size-28 sm:size-32" alt="">
+    <div class="border border-[#906e4a] rounded-2xl p-5 xl:p-10 xl2560:p-20 flex flex-col items-center text-center h-full bg-[#0d1317] hover:bg-[#11191f] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl xl2560:min-h-[800px]">
+      <img src="/public/images/icon.webp" class="size-40 xs320:size-24 xs425:size-28 sm:size-32" alt="">
       <div class="features-text flex flex-col gap-3 mt-4 flex-1">
         <h1 class="text-[#ffe8d0] text-xl md:text-2xl font-bold xl1440:text-3xl xl2560:text-4xl">A Taste of the Mediterranean</h1>
         <p class="text-[#ffe8d0] text-left lg:text-sm xl:text-base xl1440:text-lg xl2560:text-3xl">Savor in the authentic flavors of the Mediterranean, where each dish is crafted using only the freshest and top-quality ingredients. Our menu is designed to bring the true essence of the region directly to your table.</p>
@@ -390,13 +394,13 @@
     </div>
     
     <!-- Card 3 -->
-    <div class="border border-[#906e4a] rounded-2xl p-5 xl:p-10 xl2560:p-20 flex flex-col items-center text-center h-full bg-[#0d1317] hover:bg-[#11191f] hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl xl2560:min-h-[800px]" data-aos="zoom-in" data-aos-duration="1400" data-aos-delay="400">
+    <div class="border border-[#906e4a] rounded-2xl p-5 xl:p-10 xl2560:p-20 flex flex-col items-center text-center h-full bg-[#0d1317] hover:bg-[#11191f] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl xl2560:min-h-[800px]">
      <img 
-  src="images/Copy-of-Untitled-Design-2.webp" 
+  src="/public/images/Copy-of-Untitled-Design-2.webp" 
   srcset="
-    images/Copy-of-Untitled-Design-2.webp 64w,
-    images/Copy-of-Untitled-Design-2.webp 96w,
-    images/Copy-of-Untitled-Design-2.webp 128w
+    /public/images/Copy-of-Untitled-Design-2.webp 64w,
+    /public/images/Copy-of-Untitled-Design-2.webp 96w,
+    /public/images/Copy-of-Untitled-Design-2.webp 128w
   "
   sizes="(max-width: 600px) 64px, 
          (max-width: 1024px) 96px, 
@@ -422,12 +426,12 @@
     <div class="relative" data-aos="fade-right" data-aos-duration="1200" data-aos-easing="ease-out-cubic">
       <!-- Main image -->
       <img 
-  src="images/WhatsApp-Image-2025-01-06-at-14.44.06_20763d73-2048x1366.webp" 
+  src="/public/images/WhatsApp-Image-2025-01-06-at-14.44.06_20763d73-2048x1366.webp" 
   srcset="
-    images/WhatsApp-Image-2025-01-06-at-14.44.06_20763d73-2048x1366.webp 400w,
-    images/WhatsApp-Image-2025-01-06-at-14.44.06_20763d73-2048x1366.webp 800w,
-    images/WhatsApp-Image-2025-01-06-at-14.44.06_20763d73-2048x1366.webp 1600w,
-    images/WhatsApp-Image-2025-01-06-at-14.44.06_20763d73-2048x1366.webp 2048w
+    /public/images/WhatsApp-Image-2025-01-06-at-14.44.06_20763d73-2048x1366.webp 400w,
+    /public/images/WhatsApp-Image-2025-01-06-at-14.44.06_20763d73-2048x1366.webp 800w,
+    /public/images/WhatsApp-Image-2025-01-06-at-14.44.06_20763d73-2048x1366.webp 1600w,
+    /public/images/WhatsApp-Image-2025-01-06-at-14.44.06_20763d73-2048x1366.webp 2048w
   " 
   sizes="(max-width: 600px) 400px, 
          (max-width: 1024px) 800px, 
@@ -467,7 +471,7 @@
 
 
 <!-- Trusted by our customers -->
-<section id="testimonials" class="bg-[#11191f] py-20">
+<section id="testimonials" class="bg-[#11191f] py-20 overflow-x-hidden overflow-y-hidden">
   <div class="max-w-7xl mx-auto text-center px-5 xs320:px-4 xs375:px-5 xs425:px-6" data-aos="fade-up">
     <!-- Heading -->
     <p class="uppercase tracking-widest text-sm text-[#c9a56a] lg:text-lg xl1440:text-xl" data-aos="fade-down" data-aos-delay="100">
@@ -553,11 +557,11 @@
         data-aos-delay="300"
       >
         <img 
-  src="images/1615472172479.webp" 
+  src="/public/images/1615472172479.webp" 
   srcset="
-    images/1615472172479.webp 64w,
-    images/1615472172479.webp 128w,
-    images/1615472172479.webp 256w
+    /public/images/1615472172479.webp 64w,
+    /public/images/1615472172479.webp 128w,
+    /public/images/1615472172479.webp 256w
   "
   sizes="(max-width: 600px) 64px, 
          (max-width: 1024px) 128px, 
@@ -581,11 +585,11 @@
         data-aos-delay="500"
       >
         <img 
-  src="images/Doordash-PNG-Image.webp" 
+  src="/public/images/Doordash-PNG-Image.webp" 
   srcset="
-    images/Doordash-PNG-Image.webp 64w,
-    images/Doordash-PNG-Image.webp 128w,
-    images/Doordash-PNG-Image.webp 256w
+    /public/images/Doordash-PNG-Image.webp 64w,
+    /public/images/Doordash-PNG-Image.webp 128w,
+    /public/images/Doordash-PNG-Image.webp 256w
   "
   sizes="(max-width: 600px) 64px, 
          (max-width: 1024px) 128px, 
@@ -609,11 +613,11 @@
         data-aos-delay="700"
       >
        <img 
-  src="images/1656237869grubhub-old-logo.webp" 
+  src="/public/images/1656237869grubhub-old-logo.webp" 
   srcset="
-    images/1656237869grubhub-old-logo.webp 64w,
-    images/1656237869grubhub-old-logo.webp 128w,
-    images/1656237869grubhub-old-logo.webp 256w
+    /public/images/1656237869grubhub-old-logo.webp 64w,
+    /public/images/1656237869grubhub-old-logo.webp 128w,
+    /public/images/1656237869grubhub-old-logo.webp 256w
   "
   sizes="(max-width: 600px) 64px, 
          (max-width: 1024px) 128px, 
@@ -634,17 +638,17 @@
 
 
 <!-- Event Collaboration Section -->
-<section id="event-collaboration" class="bg-[#11191f] py-20">
+<section id="event-collaboration" class="bg-[#11191f] py-20 overflow-x-hidden">
   <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-12 items-center">
     
     <!-- Left: 2 stacked images -->
     <div class="space-y-6" data-aos="fade-right" data-aos-duration="1200">
       <img 
-  src="images/17-1024x576.webp" 
+  src="/public/images/17-1024x576.webp" 
   srcset="
-    images/17-1024x576.webp 400w,
-    images/17-1024x576.webp 800w,
-    images/17-1024x576.webp  1024w
+    /public/images/17-1024x576.webp 400w,
+    /public/images/17-1024x576.webp 800w,
+    /public/images/17-1024x576.webp  1024w
   "
   sizes="(max-width: 600px) 400px, 
          (max-width: 1024px) 800px, 
@@ -654,11 +658,11 @@
   loading="lazy">
 
 <img 
-  src="images/13-1024x576.webp" 
+  src="/public/images/13-1024x576.webp" 
   srcset="
-    images/13-1024x576.webp 400w,
-    images/13-1024x576.webp 800w,
-    images/13-1024x576.webp  1024w
+    /public/images/13-1024x576.webp 400w,
+    /public/images/13-1024x576.webp 800w,
+    /public/images/13-1024x576.webp  1024w
   "
   sizes="(max-width: 600px) 400px, 
          (max-width: 1024px) 800px, 
@@ -708,7 +712,7 @@
 
 
 <!-- Dress Code Section -->
-<section id="dresscode" class="relative bg-[#0b0f13] py-20">
+<section id="dresscode" class="relative bg-[#0b0f13] py-20 overflow-x-hidden">
   <div class="max-w-7xl mx-auto px-5 md:px-10 lg:px-16 xl:px-20 xl2560:px-40">
 
     <!-- Heading -->
@@ -765,9 +769,10 @@
     </div>
   </div>
 </section>
+    </main>
 
 <!-- Footer -->
-<footer class="relative bg-gradient-to-b from-[#11191f] to-black overflow-hidden" data-aos="fade-up" data-aos-duration="1200">
+<footer class="relative bg-gradient-to-b from-[#11191f] to-black overflow-hidden overflow-x-hidden" data-aos="fade-up" data-aos-duration="1200">
   <!-- Gold shimmer overlay -->
   <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#d4af3755] to-transparent opacity-10"></div>
 
@@ -777,7 +782,7 @@
       <!-- Left: Logo + About -->
       <div class="space-y-5" data-aos="fade-right" data-aos-delay="200">
         <!-- Logo Image -->
-        <img src="images/MaJLIS-LOGO-qvo1rt4lc59dm8c3t6xlezp644ymcfkddefemt5fwq.webp" alt="Majlis Logo" class="mx-auto md:mx-0  drop-shadow-[0_0_8px_#d4af37]">
+        <img src="/public/images/MaJLIS-LOGO-qvo1rt4lc59dm8c3t6xlezp644ymcfkddefemt5fwq.webp" alt="Majlis Logo" class="mx-auto md:mx-0  drop-shadow-[0_0_8px_#d4af37]">
         
         <p class="text-[#f5e6c5]/90 text-sm md:text-base font-light leading-relaxed max-w-sm mx-auto md:mx-0">
           Welcome to <span class="text-[#d4af37] font-medium">Majlis of New York</span> — Where 
@@ -825,8 +830,8 @@
   </div>
 </footer>
 <!-- Font Awesome and Aos -->
-<script src="dist/aos.js" defer></script>
+<script src="/public/libs/aos.js"></script>
 <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="../src/js/script.js" defer></script>
   </body>
 </html>
