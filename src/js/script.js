@@ -25,6 +25,16 @@ document.addEventListener("click", (e) => {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    AOS.init({ once: true });
+document.addEventListener("DOMContentLoaded", function () {
+  AOS.init({
+    once: false,   
+    mirror: false,  
+    offset: 120,   
+    duration: 800 
   });
+});
+
+window.addEventListener("load", () => {
+  AOS.refresh();
+});
+
