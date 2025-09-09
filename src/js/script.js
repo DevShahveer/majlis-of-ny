@@ -21,7 +21,7 @@ orderbutton.addEventListener("click", () => {
 
 document.addEventListener("click", (e) => {
   if (!mobnav.contains(e.target) && !hamburger.contains(e.target)) {
-    mobnav.classList.add("-translate-x-full"); // Close sidebar
+    mobnav.classList.add("-translate-x-full"); 
   }
 });
 
