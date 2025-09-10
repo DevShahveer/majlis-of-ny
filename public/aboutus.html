@@ -209,42 +209,50 @@
       </ul>
     </section>
 <!-- About us content -->
-
-
-<section id="about-content" class="flex flex-col lg:flex-row bg-[#0d1317] gap-12 py-28 px-6 md:px-20 lg:h-[100vh] items-center justify-center">
+<section id="about-content" class="flex flex-col lg:flex-row bg-[#0d1317] gap-12 py-28 px-6 md:px-20 lg:min-h-[100vh] items-center justify-center relative overflow-hidden">
   
-  <div class="about-text flex-1 space-y-6 lg:pr-10">
-    <div class="flex items-center gap-3">
+  <!-- text -->
+  <div class="about-text flex-1 space-y-6 lg:pr-10 relative z-10">
+    <div class="flex items-center gap-3" data-aos="fade-right" data-aos-duration="1000">
       <div class="w-12 h-1 bg-[#D4AF37] rounded-full"></div>
-      <h2 class="text-2xl font-semibold text-[#ffe8d0] xs320:text-lg xs425:text-xl lg:text-xl xl:text-2xl">THE STORY OF MAJLIS</h2>
+      <h2 class="text-2xl font-semibold text-[#ffe8d0] xs320:text-lg xs425:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl">
+        THE STORY OF MAJLIS
+      </h2>
     </div>
 
-    <h1 class="text-3xl font-bold text-[#ffe8d0] xs320:text-xl xs425:text-2xl lg:text-4xl xl:text-5xl leading-snug">
+    <h1 class="text-3xl font-bold text-[#ffe8d0] xs320:text-xl xs425:text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl leading-snug" data-aos="fade-up" data-aos-duration="1200">
       Majlis of New York: A Premier Hookah Bar & Restaurant
     </h1>
 
-    <p class="text-[#ffe8d0] text-base md:text-lg xs320:text-sm xs425:text-base xl:text-lg leading-relaxed">
-      Majlis of New York stands as a top-tier destination, offering a unique combination of premium halal hookah and Cross-cultural Southern European cooking. With an atmosphere of refined grace, Majlis is the place where comfort meets elegance, creating the ideal location for memorable meetups.
+    <p class="text-[#ffe8d0]/90 text-base md:text-lg xs320:text-sm xs425:text-base xl:text-lg 2xl:text-xl leading-relaxed" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
+      Majlis of New York stands as a top-tier destination, offering a unique combination of premium halal hookah and cross-cultural Southern European cooking. 
+      With an atmosphere of refined grace, Majlis is the place where comfort meets elegance, creating the ideal location for memorable meetups.
     </p>
   </div>
 
-  <div class="about-img flex-1 relative group">
-    <img src="/public/images/imgabout.webp" alt="" class="w-full h-auto rounded-2xl shadow-2xl transform transition-transform duration-500 group-hover:scale-105">
-    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black rounded-2xl opacity-20"></div>
+  <!-- img -->
+  <div class="about-img flex-1 relative group z-10" data-aos="zoom-in" data-aos-duration="1200">
+    <img src="/public/images/imgabout.webp" alt="Majlis NYC" class="w-full h-auto rounded-2xl shadow-2xl transform transition-transform duration-700 group-hover:scale-105 group-hover:rotate-1">
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black rounded-2xl opacity-20 group-hover:opacity-30 transition duration-500"></div>
   </div>
-
 </section>
 
-<section id="about-exp" class="relative bg-gradient-to-b from-[#11191f] to-[#0d1317] flex justify-center items-center py-24 px-5 md:px-20 overflow-hidden">
+<!-- Experience Section -->
+<section id="about-exp" class="relative bg-gradient-to-b from-[#11191f] to-[#0d1317] flex flex-col gap-10 text-center justify-center items-center py-24 px-5 md:px-20 overflow-hidden">
   
-  <!-- glow circle -->
-  <div class="absolute w-60 h-60 bg-yellow-700 opacity-10 rounded-full blur-3xl -top-20 -left-20 animate-pulse"></div>
-  <div class="absolute w-60 h-60 bg-yellow-700 opacity-10 rounded-full blur-3xl -bottom-20 -right-20 animate-pulse"></div>
-
-  <div id="about-exp-con" class="text-[#D4AF37] text-3xl sm:text-4xl md:text-5xl font-extrabold text-center drop-shadow-lg" data-aos="fade-left" data-aos-duration="1200">
+  <!-- text -->
+     <h2 class="text-[#ffe8d0]/80 text-lg md:text-xl xl:text-2xl xl2560:text-3xl tracking-widest uppercase" data-aos="fade-up" data-aos-duration="1000">
+    Our Journey
+  </h2>
+  <div id="about-exp-con" class="text-[#D4AF37] text-3xl sm:text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold text-center drop-shadow-lg tracking-wide" data-aos="fade-left" data-aos-duration="1200">
     13+ Years of Experience
   </div>
+
+    <p class="text-[#ffe8d0]/80 text-base md:text-lg xl:text-xl xl2560:text-2xl max-w-xl leading-relaxed" data-aos="fade-up" data-aos-duration="1400">
+    Over a decade of excellence in providing unforgettable hookah and dining experiences in the heart of New York.
+  </p>
 </section>
+
 
 
 
