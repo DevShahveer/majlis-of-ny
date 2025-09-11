@@ -83,5 +83,5 @@ window.addEventListener("load", () => {
   }
 });
 
-// Initialize AOS
 AOS.init();
+
