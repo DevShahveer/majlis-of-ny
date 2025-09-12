@@ -1,87 +1,95 @@
-// Hamburger toggle
 let hamburger = document.getElementsByClassName("hamburger")[0];
 let mobnav = document.getElementById("mob-nav");
 let orderbutton = document.getElementById("mobile-order-btn");
 let orderdropdown = document.getElementById("mobile-order-dropdown");
-let exp = document.getElementById("about-exp-con")
+let exp = document.getElementById("about-exp-con");
 
 hamburger.addEventListener("click", () => {
-    mobnav.classList.toggle("-translate-x-full");
+  mobnav.classList.toggle("-translate-x-full");
 });
 
 orderbutton.addEventListener("click", () => {
-    if(orderdropdown.style.maxHeight && orderdropdown.style.maxHeight !== "0px") {
-        orderdropdown.style.maxHeight = "0px";
-    } else {
-        orderdropdown.style.maxHeight = orderdropdown.scrollHeight + "px";
-    }
+  if(orderdropdown.style.maxHeight && orderdropdown.style.maxHeight !== "0px") {
+    orderdropdown.style.maxHeight = "0px";
+  } else {
+    orderdropdown.style.maxHeight = orderdropdown.scrollHeight + "px";
+  }
 
-    let arrow = orderbutton.querySelector("svg");
-    arrow.classList.toggle("rotate-180");
+  let arrow = orderbutton.querySelector("svg");
+  arrow.classList.toggle("rotate-180");
 });
 
 document.addEventListener("click", (e) => {
   if (!mobnav.contains(e.target) && !hamburger.contains(e.target)) {
-    mobnav.classList.add("-translate-x-full"); 
+  mobnav.classList.add("-translate-x-full"); 
   }
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  if (window.innerWidth < 768) {
   AOS.init({
-    once: false,   
-    mirror: false,  
-    offset: 120,   
-    duration: 800 
+    once: true,
+    mirror: false,
+    offset: 120,
+    duration: 800
   });
-});
+  } else {
+  AOS.init({
+    once: false,
+    mirror: false,
+    offset: 120,
+    duration: 800
+  });
+  }
 
-window.addEventListener("load", () => {
-  AOS.refresh();
-});
+  if (window.innerWidth >= 768 && typeof Lenis !== "undefined") {
+  const lenis = new Lenis({
+    duration: 2.0,
+    smoothWheel: true,
+    smoothTouch: false
+  });
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
+  }
 
-exp.innerText = "0+ Years of Experience";
+  exp.innerText = "0+ Years of Experience";
 
-// Count-up function
-function startCountUp() {
+  function startCountUp() {
   let aboutexp = 0;
   const timer = setInterval(() => {
     aboutexp++;
     exp.innerText = aboutexp + "+ Years of Experience";
     if (aboutexp >= 14) {
-      clearInterval(timer);
+    clearInterval(timer);
     }
   }, 200);
-}
+  }
 
-// AOS animation duration in ms
-const aosDuration = 1200;
+  const aosDuration = 1200;
 
-// Function to trigger count-up with AOS delay
-function triggerCountUp() {
+  function triggerCountUp() {
   setTimeout(startCountUp, aosDuration);
-}
+  }
 
-// Intersection Observer to detect visibility
-const observer = new IntersectionObserver((entries, observer) => {
+  const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      triggerCountUp();             // Start after AOS animation
-      observer.unobserve(entry.target); // Only once
+    triggerCountUp();
+    observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.5 });
+  }, { threshold: 0.5 });
 
-// Observe the element
-observer.observe(exp);
+  observer.observe(exp);
 
-// Also check on page load in case element is already visible
-window.addEventListener("load", () => {
+  window.addEventListener("load", () => {
   const rect = exp.getBoundingClientRect();
   const windowHeight = window.innerHeight || document.documentElement.clientHeight;
   if (rect.top < windowHeight && rect.bottom >= 0) {
     triggerCountUp();
   }
+  });
 });
-
-AOS.init();
-
