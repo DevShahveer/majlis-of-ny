@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (window.innerWidth >= 768 && typeof Lenis !== "undefined") {
   const lenis = new Lenis({
-    duration: 2.0,
+    duration: 1.5,
     smoothWheel: true,
     smoothTouch: false
   });

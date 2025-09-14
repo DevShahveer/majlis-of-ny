@@ -1,7 +1,7 @@
 
 if (window.innerWidth >= 768) {
   const lenis = new Lenis({
-    duration: 2.0,
+    duration: 1.5,
     smoothWheel: true,
     smoothTouch: false
   });
