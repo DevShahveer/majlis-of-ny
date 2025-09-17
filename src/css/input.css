@@ -49,3 +49,16 @@ html, body {
 html::-webkit-scrollbar, body::-webkit-scrollbar {
   display: none;
 }
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+#Flavors-timeline {
+  position: relative;
+  overflow: hidden;
+}
+#hookah-flavors {
+  display: flex;
+  gap: 1.5rem;
+  scroll-behavior: smooth;
+}

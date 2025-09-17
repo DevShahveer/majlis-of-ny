@@ -93,3 +93,33 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   });
 });
+
+const flavors = document.getElementById("Flavors-timeline");
+let scrollSpeed = 1; // speed in px per frame
+let autoScroll;
+
+function startScroll() {
+  autoScroll = requestAnimationFrame(function step() {
+    flavors.scrollLeft += scrollSpeed;
+    if (flavors.scrollLeft >= flavors.scrollWidth / 2) {
+      flavors.scrollLeft = 0; // reset loop
+    }
+    autoScroll = requestAnimationFrame(step);
+  });
+}
+
+function stopScroll() {
+  cancelAnimationFrame(autoScroll);
+}
+
+// start auto scroll
+startScroll();
+
+// stop when user interacts
+flavors.addEventListener("mouseenter", stopScroll);
+flavors.addEventListener("mousedown", stopScroll);
+flavors.addEventListener("touchstart", stopScroll);
+
+// resume after interaction
+flavors.addEventListener("mouseleave", startScroll);
+flavors.addEventListener("touchend", startScroll);
