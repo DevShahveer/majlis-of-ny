@@ -123,3 +123,41 @@ flavors.addEventListener("touchstart", stopScroll);
 // resume after interaction
 flavors.addEventListener("mouseleave", startScroll);
 flavors.addEventListener("touchend", startScroll);
+
+
+(() => {
+const gallery = document.getElementById('hookah-gallery');
+if (!gallery) return;
+
+const items = gallery.querySelectorAll('button[data-full]');
+const lightbox = document.getElementById('lightbox');
+const img = document.getElementById('lightbox-img');
+const closeBtn = document.getElementById('lightbox-close');
+
+const open = (src, alt) => {
+img.src = src;
+img.alt = alt || 'Hookah photo';
+lightbox.classList.remove('hidden');
+lightbox.classList.add('flex');
+document.body.classList.add('overflow-hidden');
+};
+
+const close = () => {
+lightbox.classList.add('hidden');
+lightbox.classList.remove('flex');
+img.src = '';
+document.body.classList.remove('overflow-hidden');
+};
+
+items.forEach(btn => {
+btn.addEventListener('click', () => {
+const image = btn.querySelector('img');
+open(btn.dataset.full || image?.src, image?.alt);
+});
+});
+
+closeBtn?.addEventListener('click', close);
+lightbox?.addEventListener('click', (e) => { if (e.target === lightbox) close(); });
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+})();
+
