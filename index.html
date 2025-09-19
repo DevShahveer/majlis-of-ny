@@ -264,13 +264,20 @@
             class="absolute top-0 left-0 w-full h-full bg-black/40 z-0"
           ></div>
           <video
-            src="/videos/Majlis of Ny.mp4"
-            autoplay
-            muted
-            loop
-            preload="none"
-            class="absolute top-0 left-0 w-full h-screen object-cover z-[-1] xs320:h-[500px] xs425:h-[600px] md:h-full lg:h-screen"
-          ></video>
+id="hero-video"
+src="/videos/Majlis of Ny.mp4"
+autoplay
+muted
+loop
+playsinline
+webkit-playsinline
+preload="auto"
+poster="/images/hero-poster.jpg"
+disablePictureInPicture
+controlsList="nodownload noplaybackrate noremoteplayback"
+class="absolute top-0 left-0 w-full h-screen object-cover z-[-1] xs320:h-[500px] xs425:h-[600px] md:h-full lg:h-screen"
+aria-hidden="true">
+      </video>
 
           <div
             id="hero-text"
